@@ -1,0 +1,12 @@
+# Image rendering — proper filled geometric shapes via matplotlib.patches
+matplotlib>=3.7.0
+ 
+# Numerical operations — coordinate arrays for polygon vertices
+numpy>=1.24.0
+ 
+# Image loading in dataset.py (PIL.Image.open)
+Pillow>=9.0.0
+ 
+# Deep learning — PyTorch Dataset, DataLoader, transforms (dataset.py / train.py)
+torch>=2.0.0
+torchvision>=0.15.0

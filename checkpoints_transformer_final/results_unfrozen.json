@@ -1,0 +1,12 @@
+{
+  "model": "CNN + Transformer",
+  "backbone": "unfrozen (fine-tuned)",
+  "embed_dim": 256,
+  "num_heads": 8,
+  "num_layers": 3,
+  "ff_dim": 512,
+  "epochs": 50,
+  "best_val_loss": 0.03046036630868912,
+  "exact_match_acc": 0.88,
+  "token_level_acc": 0.9840983014094687
+}

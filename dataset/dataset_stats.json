@@ -1,0 +1,70 @@
+{
+  "total_samples": 2000,
+  "train_count": 1600,
+  "val_count": 200,
+  "test_count": 200,
+  "single_count": 500,
+  "binary_count": 1000,
+  "triple_count": 500,
+  "objects": [
+    "sphere",
+    "cube",
+    "triangle",
+    "diamond",
+    "star",
+    "pentagon",
+    "hexagon",
+    "cross"
+  ],
+  "colors": [
+    "red",
+    "blue",
+    "green",
+    "yellow",
+    "purple",
+    "orange",
+    "pink",
+    "cyan"
+  ],
+  "sizes": [
+    "big",
+    "medium",
+    "small"
+  ],
+  "directions": [
+    "above",
+    "below",
+    "to the left of",
+    "to the right of",
+    "upper left of",
+    "upper right of",
+    "lower left of",
+    "lower right of"
+  ],
+  "screen_positions": [
+    "center",
+    "top",
+    "bottom",
+    "left",
+    "right",
+    "top left",
+    "top right",
+    "bottom left",
+    "bottom right"
+  ],
+  "triple_layouts": [
+    "left and right",
+    "top and bottom"
+  ],
+  "image_size_px": 128,
+  "bg_colors": [
+    "#f5f5f5",
+    "#fdf6e3",
+    "#eaf4fb",
+    "#eafaf1",
+    "#fdf2f8",
+    "#fef9e7",
+    "#f4ecf7",
+    "#e8f8f5"
+  ]
+}

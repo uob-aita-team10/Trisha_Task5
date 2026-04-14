@@ -1,0 +1,4746 @@
+[
+  {
+    "id": 0,
+    "type": "binary",
+    "sentence": "a small cyan triangle is to the right of a big red cube",
+    "direction": "to the right of",
+    "objects": [
+      {
+        "object": "triangle",
+        "color": "cyan",
+        "size": "small",
+        "x": 0.7169021709545788,
+        "y": 0.493891423935009
+      },
+      {
+        "object": "cube",
+        "color": "red",
+        "size": "big",
+        "x": 0.49361408871200446,
+        "y": 0.5036868982162382
+      }
+    ],
+    "image": "images/img_001022.png",
+    "bg": "#fef9e7"
+  },
+  {
+    "id": 1,
+    "type": "binary",
+    "sentence": "a medium blue cross is lower right of a medium pink cross",
+    "direction": "lower right of",
+    "objects": [
+      {
+        "object": "cross",
+        "color": "blue",
+        "size": "medium",
+        "x": 0.7610504075708464,
+        "y": 0.33757139405149783
+      },
+      {
+        "object": "cross",
+        "color": "pink",
+        "size": "medium",
+        "x": 0.5393829886831999,
+        "y": 0.5216592617554628
+      }
+    ],
+    "image": "images/img_001304.png",
+    "bg": "#f5f5f5"
+  },
+  {
+    "id": 2,
+    "type": "single",
+    "sentence": "a small blue sphere appears at the top right of the image",
+    "position": "top right",
+    "objects": [
+      {
+        "object": "sphere",
+        "color": "blue",
+        "size": "small",
+        "x": 0.7208559589784451,
+        "y": 0.7469358755241209
+      }
+    ],
+    "image": "images/img_000076.png",
+    "bg": "#f5f5f5"
+  },
+  {
+    "id": 3,
+    "type": "triple",
+    "sentence": "a small red cross and a medium yellow cross are on the left and right of a small cyan star",
+    "layout": "left and right",
+    "objects": [
+      {
+        "object": "cross",
+        "color": "red",
+        "size": "small",
+        "x": 0.24273212824029122,
+        "y": 0.5316015591022739
+      },
+      {
+        "object": "cross",
+        "color": "yellow",
+        "size": "medium",
+        "x": 0.7803379485889614,
+        "y": 0.5322481891140461
+      },
+      {
+        "object": "star",
+        "color": "cyan",
+        "size": "small",
+        "x": 0.5129993867381349,
+        "y": 0.5273849991937596
+      }
+    ],
+    "image": "images/img_001661.png",
+    "bg": "#fef9e7"
+  },
+  {
+    "id": 4,
+    "type": "triple",
+    "sentence": "a medium yellow sphere and a small pink hexagon are on the top and bottom of a big yellow cross",
+    "layout": "top and bottom",
+    "objects": [
+      {
+        "object": "sphere",
+        "color": "yellow",
+        "size": "medium",
+        "x": 0.549874762318157,
+        "y": 0.7393734217000668
+      },
+      {
+        "object": "hexagon",
+        "color": "pink",
+        "size": "small",
+        "x": 0.537505513156559,
+        "y": 0.24233385537436525
+      },
+      {
+        "object": "cross",
+        "color": "yellow",
+        "size": "big",
+        "x": 0.5292446852027498,
+        "y": 0.47144422370577943
+      }
+    ],
+    "image": "images/img_001885.png",
+    "bg": "#fdf2f8"
+  },
+  {
+    "id": 5,
+    "type": "single",
+    "sentence": "a medium red sphere appears at the bottom of the image",
+    "position": "bottom",
+    "objects": [
+      {
+        "object": "sphere",
+        "color": "red",
+        "size": "medium",
+        "x": 0.5117897243340019,
+        "y": 0.2580913560395627
+      }
+    ],
+    "image": "images/img_000489.png",
+    "bg": "#f5f5f5"
+  },
+  {
+    "id": 6,
+    "type": "single",
+    "sentence": "a small yellow pentagon appears at the top of the image",
+    "position": "top",
+    "objects": [
+      {
+        "object": "pentagon",
+        "color": "yellow",
+        "size": "small",
+        "x": 0.5108323137902351,
+        "y": 0.7471414029058144
+      }
+    ],
+    "image": "images/img_000146.png",
+    "bg": "#fdf2f8"
+  },
+  {
+    "id": 7,
+    "type": "binary",
+    "sentence": "a small cyan pentagon is lower right of a medium green diamond",
+    "direction": "lower right of",
+    "objects": [
+      {
+        "object": "pentagon",
+        "color": "cyan",
+        "size": "small",
+        "x": 0.6541333968272642,
+        "y": 0.326691396854563
+      },
+      {
+        "object": "diamond",
+        "color": "green",
+        "size": "medium",
+        "x": 0.4782145824794791,
+        "y": 0.4889763035374952
+      }
+    ],
+    "image": "images/img_001239.png",
+    "bg": "#fdf2f8"
+  },
+  {
+    "id": 8,
+    "type": "single",
+    "sentence": "a big orange cross appears at the bottom right of the image",
+    "position": "bottom right",
+    "objects": [
+      {
+        "object": "cross",
+        "color": "orange",
+        "size": "big",
+        "x": 0.7418172694550931,
+        "y": 0.2874502864060659
+      }
+    ],
+    "image": "images/img_000384.png",
+    "bg": "#eafaf1"
+  },
+  {
+    "id": 9,
+    "type": "binary",
+    "sentence": "a small purple star is to the left of a small yellow star",
+    "direction": "to the left of",
+    "objects": [
+      {
+        "object": "star",
+        "color": "purple",
+        "size": "small",
+        "x": 0.3090580883014946,
+        "y": 0.5531812709434752
+      },
+      {
+        "object": "star",
+        "color": "yellow",
+        "size": "small",
+        "x": 0.5398724078267808,
+        "y": 0.5201906685329588
+      }
+    ],
+    "image": "images/img_000877.png",
+    "bg": "#f5f5f5"
+  },
+  {
+    "id": 10,
+    "type": "binary",
+    "sentence": "a small red diamond is to the left of a small orange hexagon",
+    "direction": "to the left of",
+    "objects": [
+      {
+        "object": "diamond",
+        "color": "red",
+        "size": "small",
+        "x": 0.24658577760229294,
+        "y": 0.4678810666680435
+      },
+      {
+        "object": "hexagon",
+        "color": "orange",
+        "size": "small",
+        "x": 0.4800556992880482,
+        "y": 0.46315908341723805
+      }
+    ],
+    "image": "images/img_000603.png",
+    "bg": "#e8f8f5"
+  },
+  {
+    "id": 11,
+    "type": "binary",
+    "sentence": "a medium blue star is lower left of a medium pink cross",
+    "direction": "lower left of",
+    "objects": [
+      {
+        "object": "star",
+        "color": "blue",
+        "size": "medium",
+        "x": 0.35609296743803587,
+        "y": 0.34149787983975743
+      },
+      {
+        "object": "cross",
+        "color": "pink",
+        "size": "medium",
+        "x": 0.5301408981791413,
+        "y": 0.5256193048360321
+      }
+    ],
+    "image": "images/img_000779.png",
+    "bg": "#fdf6e3"
+  },
+  {
+    "id": 12,
+    "type": "binary",
+    "sentence": "a medium yellow sphere is lower right of a small red cube",
+    "direction": "lower right of",
+    "objects": [
+      {
+        "object": "sphere",
+        "color": "yellow",
+        "size": "medium",
+        "x": 0.6991351803282819,
+        "y": 0.24584472183808836
+      },
+      {
+        "object": "cube",
+        "color": "red",
+        "size": "small",
+        "x": 0.4636544490146928,
+        "y": 0.4851664233763283
+      }
+    ],
+    "image": "images/img_001005.png",
+    "bg": "#fef9e7"
+  },
+  {
+    "id": 13,
+    "type": "binary",
+    "sentence": "a big purple cross is upper left of a big blue cross",
+    "direction": "upper left of",
+    "objects": [
+      {
+        "object": "cross",
+        "color": "purple",
+        "size": "big",
+        "x": 0.3345395509194625,
+        "y": 0.6408436249065247
+      },
+      {
+        "object": "cross",
+        "color": "blue",
+        "size": "big",
+        "x": 0.49914731055335626,
+        "y": 0.47846574343941867
+      }
+    ],
+    "image": "images/img_000754.png",
+    "bg": "#f5f5f5"
+  },
+  {
+    "id": 14,
+    "type": "binary",
+    "sentence": "a medium green pentagon is above a medium red cube",
+    "direction": "above",
+    "objects": [
+      {
+        "object": "pentagon",
+        "color": "green",
+        "size": "medium",
+        "x": 0.5227417499566727,
+        "y": 0.7128266932750467
+      },
+      {
+        "object": "cube",
+        "color": "red",
+        "size": "medium",
+        "x": 0.5173442097478327,
+        "y": 0.4771017941626171
+      }
+    ],
+    "image": "images/img_001044.png",
+    "bg": "#eafaf1"
+  },
+  {
+    "id": 15,
+    "type": "triple",
+    "sentence": "a big orange triangle and a medium pink cube are on the left and right of a medium cyan pentagon",
+    "layout": "left and right",
+    "objects": [
+      {
+        "object": "triangle",
+        "color": "orange",
+        "size": "big",
+        "x": 0.17854725921806502,
+        "y": 0.4917813671436542
+      },
+      {
+        "object": "cube",
+        "color": "pink",
+        "size": "medium",
+        "x": 0.7452089185212831,
+        "y": 0.5472187115919601
+      },
+      {
+        "object": "pentagon",
+        "color": "cyan",
+        "size": "medium",
+        "x": 0.4810542081023488,
+        "y": 0.5213065033469201
+      }
+    ],
+    "image": "images/img_001761.png",
+    "bg": "#fdf2f8"
+  },
+  {
+    "id": 16,
+    "type": "binary",
+    "sentence": "a medium green cube is below a big pink cube",
+    "direction": "below",
+    "objects": [
+      {
+        "object": "cube",
+        "color": "green",
+        "size": "medium",
+        "x": 0.4955715536577019,
+        "y": 0.20614948870865712
+      },
+      {
+        "object": "cube",
+        "color": "pink",
+        "size": "big",
+        "x": 0.5137113724729949,
+        "y": 0.46089684943996856
+      }
+    ],
+    "image": "images/img_000893.png",
+    "bg": "#eaf4fb"
+  },
+  {
+    "id": 17,
+    "type": "single",
+    "sentence": "a medium purple triangle appears at the bottom left of the image",
+    "position": "bottom left",
+    "objects": [
+      {
+        "object": "triangle",
+        "color": "purple",
+        "size": "medium",
+        "x": 0.2806739039114901,
+        "y": 0.21277195549852046
+      }
+    ],
+    "image": "images/img_000436.png",
+    "bg": "#eafaf1"
+  },
+  {
+    "id": 18,
+    "type": "binary",
+    "sentence": "a big red sphere is upper left of a big pink pentagon",
+    "direction": "upper left of",
+    "objects": [
+      {
+        "object": "sphere",
+        "color": "red",
+        "size": "big",
+        "x": 0.34986827763885814,
+        "y": 0.7093392605377982
+      },
+      {
+        "object": "pentagon",
+        "color": "pink",
+        "size": "big",
+        "x": 0.5284459705489218,
+        "y": 0.5067501185384621
+      }
+    ],
+    "image": "images/img_001244.png",
+    "bg": "#eafaf1"
+  },
+  {
+    "id": 19,
+    "type": "triple",
+    "sentence": "a big blue triangle and a small blue star are on the top and bottom of a small purple triangle",
+    "layout": "top and bottom",
+    "objects": [
+      {
+        "object": "triangle",
+        "color": "blue",
+        "size": "big",
+        "x": 0.4977502410343261,
+        "y": 0.6989612024270111
+      },
+      {
+        "object": "star",
+        "color": "blue",
+        "size": "small",
+        "x": 0.5174163126281451,
+        "y": 0.25735570343877223
+      },
+      {
+        "object": "triangle",
+        "color": "purple",
+        "size": "small",
+        "x": 0.507520903583534,
+        "y": 0.4784366729506533
+      }
+    ],
+    "image": "images/img_001582.png",
+    "bg": "#eaf4fb"
+  },
+  {
+    "id": 20,
+    "type": "single",
+    "sentence": "a big orange sphere appears at the bottom of the image",
+    "position": "bottom",
+    "objects": [
+      {
+        "object": "sphere",
+        "color": "orange",
+        "size": "big",
+        "x": 0.5229582479981053,
+        "y": 0.2264164460114301
+      }
+    ],
+    "image": "images/img_000153.png",
+    "bg": "#eafaf1"
+  },
+  {
+    "id": 21,
+    "type": "binary",
+    "sentence": "a big pink sphere is to the left of a medium red triangle",
+    "direction": "to the left of",
+    "objects": [
+      {
+        "object": "sphere",
+        "color": "pink",
+        "size": "big",
+        "x": 0.2864404976168698,
+        "y": 0.4687293132755475
+      },
+      {
+        "object": "triangle",
+        "color": "red",
+        "size": "medium",
+        "x": 0.5277229691340274,
+        "y": 0.47935404530864256
+      }
+    ],
+    "image": "images/img_001427.png",
+    "bg": "#fdf2f8"
+  },
+  {
+    "id": 22,
+    "type": "binary",
+    "sentence": "a medium blue pentagon is below a medium orange cross",
+    "direction": "below",
+    "objects": [
+      {
+        "object": "pentagon",
+        "color": "blue",
+        "size": "medium",
+        "x": 0.5613524437849652,
+        "y": 0.3011598411732609
+      },
+      {
+        "object": "cross",
+        "color": "orange",
+        "size": "medium",
+        "x": 0.5231084901107423,
+        "y": 0.5289371180135578
+      }
+    ],
+    "image": "images/img_000992.png",
+    "bg": "#eaf4fb"
+  },
+  {
+    "id": 23,
+    "type": "single",
+    "sentence": "a medium purple pentagon appears at the bottom right of the image",
+    "position": "bottom right",
+    "objects": [
+      {
+        "object": "pentagon",
+        "color": "purple",
+        "size": "medium",
+        "x": 0.7519454827868416,
+        "y": 0.28114079710159334
+      }
+    ],
+    "image": "images/img_000279.png",
+    "bg": "#eaf4fb"
+  },
+  {
+    "id": 24,
+    "type": "binary",
+    "sentence": "a medium purple cross is upper right of a small purple pentagon",
+    "direction": "upper right of",
+    "objects": [
+      {
+        "object": "cross",
+        "color": "purple",
+        "size": "medium",
+        "x": 0.7338801834877843,
+        "y": 0.727477977987821
+      },
+      {
+        "object": "pentagon",
+        "color": "purple",
+        "size": "small",
+        "x": 0.5341684294520099,
+        "y": 0.5091431984678711
+      }
+    ],
+    "image": "images/img_000649.png",
+    "bg": "#e8f8f5"
+  },
+  {
+    "id": 25,
+    "type": "binary",
+    "sentence": "a medium cyan triangle is lower left of a medium orange pentagon",
+    "direction": "lower left of",
+    "objects": [
+      {
+        "object": "triangle",
+        "color": "cyan",
+        "size": "medium",
+        "x": 0.3392041641215633,
+        "y": 0.30312011543922274
+      },
+      {
+        "object": "pentagon",
+        "color": "orange",
+        "size": "medium",
+        "x": 0.5211347494323497,
+        "y": 0.4944470458186596
+      }
+    ],
+    "image": "images/img_000612.png",
+    "bg": "#eafaf1"
+  },
+  {
+    "id": 26,
+    "type": "binary",
+    "sentence": "a small cyan sphere is below a big orange cube",
+    "direction": "below",
+    "objects": [
+      {
+        "object": "sphere",
+        "color": "cyan",
+        "size": "small",
+        "x": 0.5716141623788525,
+        "y": 0.24691632241358913
+      },
+      {
+        "object": "cube",
+        "color": "orange",
+        "size": "big",
+        "x": 0.5356917711517544,
+        "y": 0.5059202311640553
+      }
+    ],
+    "image": "images/img_001294.png",
+    "bg": "#f4ecf7"
+  },
+  {
+    "id": 27,
+    "type": "binary",
+    "sentence": "a medium blue hexagon is lower right of a small purple hexagon",
+    "direction": "lower right of",
+    "objects": [
+      {
+        "object": "hexagon",
+        "color": "blue",
+        "size": "medium",
+        "x": 0.6559968037209831,
+        "y": 0.2687375061261874
+      },
+      {
+        "object": "hexagon",
+        "color": "purple",
+        "size": "small",
+        "x": 0.489385844475986,
+        "y": 0.46960003084935403
+      }
+    ],
+    "image": "images/img_000940.png",
+    "bg": "#eafaf1"
+  },
+  {
+    "id": 28,
+    "type": "triple",
+    "sentence": "a medium yellow triangle and a medium purple pentagon are on the top and bottom of a big green cross",
+    "layout": "top and bottom",
+    "objects": [
+      {
+        "object": "triangle",
+        "color": "yellow",
+        "size": "medium",
+        "x": 0.4808116962905906,
+        "y": 0.7543567337280376
+      },
+      {
+        "object": "pentagon",
+        "color": "purple",
+        "size": "medium",
+        "x": 0.4981414398499205,
+        "y": 0.23588669592848133
+      },
+      {
+        "object": "cross",
+        "color": "green",
+        "size": "big",
+        "x": 0.5102697484650413,
+        "y": 0.5076964747770706
+      }
+    ],
+    "image": "images/img_001751.png",
+    "bg": "#f5f5f5"
+  },
+  {
+    "id": 29,
+    "type": "single",
+    "sentence": "a big purple triangle appears at the right of the image",
+    "position": "right",
+    "objects": [
+      {
+        "object": "triangle",
+        "color": "purple",
+        "size": "big",
+        "x": 0.7864250974143393,
+        "y": 0.46632235488078805
+      }
+    ],
+    "image": "images/img_000271.png",
+    "bg": "#e8f8f5"
+  },
+  {
+    "id": 30,
+    "type": "single",
+    "sentence": "a small red cube appears at the right of the image",
+    "position": "right",
+    "objects": [
+      {
+        "object": "cube",
+        "color": "red",
+        "size": "small",
+        "x": 0.7620903981988479,
+        "y": 0.5213567200733049
+      }
+    ],
+    "image": "images/img_000244.png",
+    "bg": "#f4ecf7"
+  },
+  {
+    "id": 31,
+    "type": "single",
+    "sentence": "a medium green pentagon appears at the top of the image",
+    "position": "top",
+    "objects": [
+      {
+        "object": "pentagon",
+        "color": "green",
+        "size": "medium",
+        "x": 0.4975136866821099,
+        "y": 0.7605108096020343
+      }
+    ],
+    "image": "images/img_000188.png",
+    "bg": "#fdf2f8"
+  },
+  {
+    "id": 32,
+    "type": "binary",
+    "sentence": "a medium pink sphere is upper right of a small red diamond",
+    "direction": "upper right of",
+    "objects": [
+      {
+        "object": "sphere",
+        "color": "pink",
+        "size": "medium",
+        "x": 0.670054187659316,
+        "y": 0.7105646549009226
+      },
+      {
+        "object": "diamond",
+        "color": "red",
+        "size": "small",
+        "x": 0.47508567834599963,
+        "y": 0.5305729654792275
+      }
+    ],
+    "image": "images/img_000592.png",
+    "bg": "#f4ecf7"
+  },
+  {
+    "id": 33,
+    "type": "single",
+    "sentence": "a small pink cube appears at the center of the image",
+    "position": "center",
+    "objects": [
+      {
+        "object": "cube",
+        "color": "pink",
+        "size": "small",
+        "x": 0.49489756764098497,
+        "y": 0.496780340028502
+      }
+    ],
+    "image": "images/img_000180.png",
+    "bg": "#fdf6e3"
+  },
+  {
+    "id": 34,
+    "type": "binary",
+    "sentence": "a small purple cross is above a big cyan sphere",
+    "direction": "above",
+    "objects": [
+      {
+        "object": "cross",
+        "color": "purple",
+        "size": "small",
+        "x": 0.4474255915401838,
+        "y": 0.8181893603442424
+      },
+      {
+        "object": "sphere",
+        "color": "cyan",
+        "size": "big",
+        "x": 0.4663646639441555,
+        "y": 0.5379352284656289
+      }
+    ],
+    "image": "images/img_001341.png",
+    "bg": "#eafaf1"
+  },
+  {
+    "id": 35,
+    "type": "binary",
+    "sentence": "a big pink sphere is to the left of a small yellow cross",
+    "direction": "to the left of",
+    "objects": [
+      {
+        "object": "sphere",
+        "color": "pink",
+        "size": "big",
+        "x": 0.22217527615931604,
+        "y": 0.5255206435006694
+      },
+      {
+        "object": "cross",
+        "color": "yellow",
+        "size": "small",
+        "x": 0.4631050183881279,
+        "y": 0.5150385327715121
+      }
+    ],
+    "image": "images/img_001137.png",
+    "bg": "#eafaf1"
+  },
+  {
+    "id": 36,
+    "type": "binary",
+    "sentence": "a medium orange star is upper right of a medium orange sphere",
+    "direction": "upper right of",
+    "objects": [
+      {
+        "object": "star",
+        "color": "orange",
+        "size": "medium",
+        "x": 0.7598662861484042,
+        "y": 0.7541354498312677
+      },
+      {
+        "object": "sphere",
+        "color": "orange",
+        "size": "medium",
+        "x": 0.5313097933041042,
+        "y": 0.5219621036433798
+      }
+    ],
+    "image": "images/img_001066.png",
+    "bg": "#e8f8f5"
+  },
+  {
+    "id": 37,
+    "type": "triple",
+    "sentence": "a medium blue triangle and a medium green pentagon are on the left and right of a small green pentagon",
+    "layout": "left and right",
+    "objects": [
+      {
+        "object": "triangle",
+        "color": "blue",
+        "size": "medium",
+        "x": 0.19029577530311123,
+        "y": 0.4729270583100004
+      },
+      {
+        "object": "pentagon",
+        "color": "green",
+        "size": "medium",
+        "x": 0.7629928405057824,
+        "y": 0.48555746031174646
+      },
+      {
+        "object": "pentagon",
+        "color": "green",
+        "size": "small",
+        "x": 0.4955939872412576,
+        "y": 0.4840862442496932
+      }
+    ],
+    "image": "images/img_001711.png",
+    "bg": "#fef9e7"
+  },
+  {
+    "id": 38,
+    "type": "triple",
+    "sentence": "a medium blue diamond and a big cyan sphere are on the left and right of a small green sphere",
+    "layout": "left and right",
+    "objects": [
+      {
+        "object": "diamond",
+        "color": "blue",
+        "size": "medium",
+        "x": 0.2064694913911005,
+        "y": 0.5170842723491768
+      },
+      {
+        "object": "sphere",
+        "color": "cyan",
+        "size": "big",
+        "x": 0.7737972426915732,
+        "y": 0.4828259888556816
+      },
+      {
+        "object": "sphere",
+        "color": "green",
+        "size": "small",
+        "x": 0.5060382966455232,
+        "y": 0.49487714553636364
+      }
+    ],
+    "image": "images/img_001893.png",
+    "bg": "#fef9e7"
+  },
+  {
+    "id": 39,
+    "type": "binary",
+    "sentence": "a medium purple diamond is to the right of a small red cross",
+    "direction": "to the right of",
+    "objects": [
+      {
+        "object": "diamond",
+        "color": "purple",
+        "size": "medium",
+        "x": 0.7355343336504773,
+        "y": 0.5316383849783985
+      },
+      {
+        "object": "cross",
+        "color": "red",
+        "size": "small",
+        "x": 0.5053477274717131,
+        "y": 0.5307504343054069
+      }
+    ],
+    "image": "images/img_001370.png",
+    "bg": "#fdf2f8"
+  },
+  {
+    "id": 40,
+    "type": "binary",
+    "sentence": "a medium blue pentagon is to the right of a big purple pentagon",
+    "direction": "to the right of",
+    "objects": [
+      {
+        "object": "pentagon",
+        "color": "blue",
+        "size": "medium",
+        "x": 0.7702505600325089,
+        "y": 0.4456137941812207
+      },
+      {
+        "object": "pentagon",
+        "color": "purple",
+        "size": "big",
+        "x": 0.4818917429505964,
+        "y": 0.46783574842045067
+      }
+    ],
+    "image": "images/img_000950.png",
+    "bg": "#fdf6e3"
+  },
+  {
+    "id": 41,
+    "type": "binary",
+    "sentence": "a medium blue diamond is below a small orange hexagon",
+    "direction": "below",
+    "objects": [
+      {
+        "object": "diamond",
+        "color": "blue",
+        "size": "medium",
+        "x": 0.4582238012671801,
+        "y": 0.21832574352281028
+      },
+      {
+        "object": "hexagon",
+        "color": "orange",
+        "size": "small",
+        "x": 0.4690023897121832,
+        "y": 0.49308656419726643
+      }
+    ],
+    "image": "images/img_000621.png",
+    "bg": "#fef9e7"
+  },
+  {
+    "id": 42,
+    "type": "single",
+    "sentence": "a medium green sphere appears at the bottom of the image",
+    "position": "bottom",
+    "objects": [
+      {
+        "object": "sphere",
+        "color": "green",
+        "size": "medium",
+        "x": 0.534713808846256,
+        "y": 0.21290718793700444
+      }
+    ],
+    "image": "images/img_000277.png",
+    "bg": "#f4ecf7"
+  },
+  {
+    "id": 43,
+    "type": "single",
+    "sentence": "a small pink star appears at the bottom right of the image",
+    "position": "bottom right",
+    "objects": [
+      {
+        "object": "star",
+        "color": "pink",
+        "size": "small",
+        "x": 0.7629497049560596,
+        "y": 0.24893371293234637
+      }
+    ],
+    "image": "images/img_000033.png",
+    "bg": "#eafaf1"
+  },
+  {
+    "id": 44,
+    "type": "binary",
+    "sentence": "a big blue diamond is upper left of a small red triangle",
+    "direction": "upper left of",
+    "objects": [
+      {
+        "object": "diamond",
+        "color": "blue",
+        "size": "big",
+        "x": 0.3161572163100395,
+        "y": 0.6874619519223506
+      },
+      {
+        "object": "triangle",
+        "color": "red",
+        "size": "small",
+        "x": 0.5084483609003085,
+        "y": 0.5089889617150494
+      }
+    ],
+    "image": "images/img_000633.png",
+    "bg": "#f5f5f5"
+  },
+  {
+    "id": 45,
+    "type": "triple",
+    "sentence": "a small orange star and a medium green triangle are on the left and right of a big blue triangle",
+    "layout": "left and right",
+    "objects": [
+      {
+        "object": "star",
+        "color": "orange",
+        "size": "small",
+        "x": 0.21580206235541183,
+        "y": 0.49820015862300315
+      },
+      {
+        "object": "triangle",
+        "color": "green",
+        "size": "medium",
+        "x": 0.7490542375156732,
+        "y": 0.4968345328384184
+      },
+      {
+        "object": "triangle",
+        "color": "blue",
+        "size": "big",
+        "x": 0.4905392731045561,
+        "y": 0.48288042988391344
+      }
+    ],
+    "image": "images/img_001799.png",
+    "bg": "#f5f5f5"
+  },
+  {
+    "id": 46,
+    "type": "binary",
+    "sentence": "a medium cyan diamond is above a medium cyan sphere",
+    "direction": "above",
+    "objects": [
+      {
+        "object": "diamond",
+        "color": "cyan",
+        "size": "medium",
+        "x": 0.45909244532464155,
+        "y": 0.7803029877302521
+      },
+      {
+        "object": "sphere",
+        "color": "cyan",
+        "size": "medium",
+        "x": 0.46972411565059224,
+        "y": 0.4991697129370276
+      }
+    ],
+    "image": "images/img_001193.png",
+    "bg": "#fef9e7"
+  },
+  {
+    "id": 47,
+    "type": "single",
+    "sentence": "a small red cube appears at the top left of the image",
+    "position": "top left",
+    "objects": [
+      {
+        "object": "cube",
+        "color": "red",
+        "size": "small",
+        "x": 0.28011142180341936,
+        "y": 0.7594425172394806
+      }
+    ],
+    "image": "images/img_000200.png",
+    "bg": "#f4ecf7"
+  },
+  {
+    "id": 48,
+    "type": "binary",
+    "sentence": "a medium orange cube is upper right of a small pink hexagon",
+    "direction": "upper right of",
+    "objects": [
+      {
+        "object": "cube",
+        "color": "orange",
+        "size": "medium",
+        "x": 0.6937714138998408,
+        "y": 0.7152788651531072
+      },
+      {
+        "object": "hexagon",
+        "color": "pink",
+        "size": "small",
+        "x": 0.4839267623908098,
+        "y": 0.47939953515675393
+      }
+    ],
+    "image": "images/img_001444.png",
+    "bg": "#fdf6e3"
+  },
+  {
+    "id": 49,
+    "type": "triple",
+    "sentence": "a small pink cross and a medium green star are on the top and bottom of a small cyan triangle",
+    "layout": "top and bottom",
+    "objects": [
+      {
+        "object": "cross",
+        "color": "pink",
+        "size": "small",
+        "x": 0.4824630872417525,
+        "y": 0.7142799972727023
+      },
+      {
+        "object": "star",
+        "color": "green",
+        "size": "medium",
+        "x": 0.522677925565825,
+        "y": 0.20852060906821013
+      },
+      {
+        "object": "triangle",
+        "color": "cyan",
+        "size": "small",
+        "x": 0.5098750056186565,
+        "y": 0.47300152254125527
+      }
+    ],
+    "image": "images/img_001602.png",
+    "bg": "#fdf6e3"
+  },
+  {
+    "id": 50,
+    "type": "single",
+    "sentence": "a small purple pentagon appears at the center of the image",
+    "position": "center",
+    "objects": [
+      {
+        "object": "pentagon",
+        "color": "purple",
+        "size": "small",
+        "x": 0.5326349566988497,
+        "y": 0.4671568576409213
+      }
+    ],
+    "image": "images/img_000276.png",
+    "bg": "#eafaf1"
+  },
+  {
+    "id": 51,
+    "type": "single",
+    "sentence": "a medium blue hexagon appears at the right of the image",
+    "position": "right",
+    "objects": [
+      {
+        "object": "hexagon",
+        "color": "blue",
+        "size": "medium",
+        "x": 0.7718821983604708,
+        "y": 0.4848558219237929
+      }
+    ],
+    "image": "images/img_000416.png",
+    "bg": "#fdf6e3"
+  },
+  {
+    "id": 52,
+    "type": "single",
+    "sentence": "a small green cross appears at the top of the image",
+    "position": "top",
+    "objects": [
+      {
+        "object": "cross",
+        "color": "green",
+        "size": "small",
+        "x": 0.4652598484213893,
+        "y": 0.7418527984616727
+      }
+    ],
+    "image": "images/img_000237.png",
+    "bg": "#e8f8f5"
+  },
+  {
+    "id": 53,
+    "type": "binary",
+    "sentence": "a medium cyan pentagon is to the left of a big blue cross",
+    "direction": "to the left of",
+    "objects": [
+      {
+        "object": "pentagon",
+        "color": "cyan",
+        "size": "medium",
+        "x": 0.3023415097625812,
+        "y": 0.5548541601852551
+      },
+      {
+        "object": "cross",
+        "color": "blue",
+        "size": "big",
+        "x": 0.5185422498633554,
+        "y": 0.5333968281504798
+      }
+    ],
+    "image": "images/img_001014.png",
+    "bg": "#eafaf1"
+  },
+  {
+    "id": 54,
+    "type": "triple",
+    "sentence": "a big blue hexagon and a big pink triangle are on the top and bottom of a big red pentagon",
+    "layout": "top and bottom",
+    "objects": [
+      {
+        "object": "hexagon",
+        "color": "blue",
+        "size": "big",
+        "x": 0.5048990144852755,
+        "y": 0.7543396147835644
+      },
+      {
+        "object": "triangle",
+        "color": "pink",
+        "size": "big",
+        "x": 0.5127500878865031,
+        "y": 0.2533875997409975
+      },
+      {
+        "object": "pentagon",
+        "color": "red",
+        "size": "big",
+        "x": 0.5125484582708004,
+        "y": 0.4759948820288331
+      }
+    ],
+    "image": "images/img_001619.png",
+    "bg": "#f4ecf7"
+  },
+  {
+    "id": 55,
+    "type": "single",
+    "sentence": "a medium blue hexagon appears at the bottom left of the image",
+    "position": "bottom left",
+    "objects": [
+      {
+        "object": "hexagon",
+        "color": "blue",
+        "size": "medium",
+        "x": 0.2521547285718516,
+        "y": 0.23467355134810053
+      }
+    ],
+    "image": "images/img_000176.png",
+    "bg": "#eafaf1"
+  },
+  {
+    "id": 56,
+    "type": "binary",
+    "sentence": "a medium blue sphere is above a small pink cross",
+    "direction": "above",
+    "objects": [
+      {
+        "object": "sphere",
+        "color": "blue",
+        "size": "medium",
+        "x": 0.533220586982762,
+        "y": 0.7543149988627157
+      },
+      {
+        "object": "cross",
+        "color": "pink",
+        "size": "small",
+        "x": 0.5133056013460803,
+        "y": 0.5038391797117379
+      }
+    ],
+    "image": "images/img_001437.png",
+    "bg": "#eaf4fb"
+  },
+  {
+    "id": 57,
+    "type": "single",
+    "sentence": "a small cyan diamond appears at the right of the image",
+    "position": "right",
+    "objects": [
+      {
+        "object": "diamond",
+        "color": "cyan",
+        "size": "small",
+        "x": 0.7701912932089189,
+        "y": 0.5227040287547874
+      }
+    ],
+    "image": "images/img_000202.png",
+    "bg": "#eafaf1"
+  },
+  {
+    "id": 58,
+    "type": "binary",
+    "sentence": "a small green cross is to the left of a medium red star",
+    "direction": "to the left of",
+    "objects": [
+      {
+        "object": "cross",
+        "color": "green",
+        "size": "small",
+        "x": 0.29580958949658653,
+        "y": 0.5004277774474927
+      },
+      {
+        "object": "star",
+        "color": "red",
+        "size": "medium",
+        "x": 0.5308202434645499,
+        "y": 0.5253999360765202
+      }
+    ],
+    "image": "images/img_000984.png",
+    "bg": "#eaf4fb"
+  },
+  {
+    "id": 59,
+    "type": "triple",
+    "sentence": "a medium cyan star and a small red hexagon are on the top and bottom of a big purple sphere",
+    "layout": "top and bottom",
+    "objects": [
+      {
+        "object": "star",
+        "color": "cyan",
+        "size": "medium",
+        "x": 0.5019727670184877,
+        "y": 0.735565469480669
+      },
+      {
+        "object": "hexagon",
+        "color": "red",
+        "size": "small",
+        "x": 0.5537661698390811,
+        "y": 0.2363246502816692
+      },
+      {
+        "object": "sphere",
+        "color": "purple",
+        "size": "big",
+        "x": 0.5241078573114449,
+        "y": 0.4943663016033331
+      }
+    ],
+    "image": "images/img_001930.png",
+    "bg": "#fef9e7"
+  },
+  {
+    "id": 60,
+    "type": "triple",
+    "sentence": "a medium blue cross and a medium orange diamond are on the left and right of a small blue cross",
+    "layout": "left and right",
+    "objects": [
+      {
+        "object": "cross",
+        "color": "blue",
+        "size": "medium",
+        "x": 0.22406524698522554,
+        "y": 0.4946614666871873
+      },
+      {
+        "object": "diamond",
+        "color": "orange",
+        "size": "medium",
+        "x": 0.7962020329571747,
+        "y": 0.4815863903778384
+      },
+      {
+        "object": "cross",
+        "color": "blue",
+        "size": "small",
+        "x": 0.5034695811186869,
+        "y": 0.4881499967141124
+      }
+    ],
+    "image": "images/img_001965.png",
+    "bg": "#f4ecf7"
+  },
+  {
+    "id": 61,
+    "type": "triple",
+    "sentence": "a small purple star and a medium yellow cross are on the top and bottom of a big orange triangle",
+    "layout": "top and bottom",
+    "objects": [
+      {
+        "object": "star",
+        "color": "purple",
+        "size": "small",
+        "x": 0.5097413009479792,
+        "y": 0.7411565024819698
+      },
+      {
+        "object": "cross",
+        "color": "yellow",
+        "size": "medium",
+        "x": 0.5060437939283038,
+        "y": 0.262848819775266
+      },
+      {
+        "object": "triangle",
+        "color": "orange",
+        "size": "big",
+        "x": 0.529950386916026,
+        "y": 0.5020854832987831
+      }
+    ],
+    "image": "images/img_001818.png",
+    "bg": "#e8f8f5"
+  },
+  {
+    "id": 62,
+    "type": "triple",
+    "sentence": "a big pink diamond and a big pink pentagon are on the top and bottom of a big green star",
+    "layout": "top and bottom",
+    "objects": [
+      {
+        "object": "diamond",
+        "color": "pink",
+        "size": "big",
+        "x": 0.4701219850713664,
+        "y": 0.7607216993414133
+      },
+      {
+        "object": "pentagon",
+        "color": "pink",
+        "size": "big",
+        "x": 0.5005157824948873,
+        "y": 0.23865908701293218
+      },
+      {
+        "object": "star",
+        "color": "green",
+        "size": "big",
+        "x": 0.47230642231456615,
+        "y": 0.49419392934745426
+      }
+    ],
+    "image": "images/img_001900.png",
+    "bg": "#fdf6e3"
+  },
+  {
+    "id": 63,
+    "type": "binary",
+    "sentence": "a medium orange hexagon is to the left of a medium green cross",
+    "direction": "to the left of",
+    "objects": [
+      {
+        "object": "hexagon",
+        "color": "orange",
+        "size": "medium",
+        "x": 0.28895964317012884,
+        "y": 0.502034586317527
+      },
+      {
+        "object": "cross",
+        "color": "green",
+        "size": "medium",
+        "x": 0.5149973497349145,
+        "y": 0.5261414887473467
+      }
+    ],
+    "image": "images/img_000782.png",
+    "bg": "#f4ecf7"
+  },
+  {
+    "id": 64,
+    "type": "binary",
+    "sentence": "a big pink diamond is upper right of a small purple cube",
+    "direction": "upper right of",
+    "objects": [
+      {
+        "object": "diamond",
+        "color": "pink",
+        "size": "big",
+        "x": 0.716904019612086,
+        "y": 0.7181740179395367
+      },
+      {
+        "object": "cube",
+        "color": "purple",
+        "size": "small",
+        "x": 0.5362634629392883,
+        "y": 0.49523516129243605
+      }
+    ],
+    "image": "images/img_001113.png",
+    "bg": "#fdf2f8"
+  },
+  {
+    "id": 65,
+    "type": "triple",
+    "sentence": "a medium red cube and a big purple hexagon are on the left and right of a small purple star",
+    "layout": "left and right",
+    "objects": [
+      {
+        "object": "cube",
+        "color": "red",
+        "size": "medium",
+        "x": 0.22344278939776782,
+        "y": 0.471480945557149
+      },
+      {
+        "object": "hexagon",
+        "color": "purple",
+        "size": "big",
+        "x": 0.8176640353251597,
+        "y": 0.47798223419870334
+      },
+      {
+        "object": "star",
+        "color": "purple",
+        "size": "small",
+        "x": 0.5097728805124804,
+        "y": 0.5008861798671798
+      }
+    ],
+    "image": "images/img_001754.png",
+    "bg": "#f5f5f5"
+  },
+  {
+    "id": 66,
+    "type": "single",
+    "sentence": "a medium purple cross appears at the bottom right of the image",
+    "position": "bottom right",
+    "objects": [
+      {
+        "object": "cross",
+        "color": "purple",
+        "size": "medium",
+        "x": 0.7521967830769186,
+        "y": 0.2873014522564758
+      }
+    ],
+    "image": "images/img_000204.png",
+    "bg": "#eafaf1"
+  },
+  {
+    "id": 67,
+    "type": "binary",
+    "sentence": "a medium cyan diamond is to the left of a big cyan diamond",
+    "direction": "to the left of",
+    "objects": [
+      {
+        "object": "diamond",
+        "color": "cyan",
+        "size": "medium",
+        "x": 0.2567170067221482,
+        "y": 0.5083377387996045
+      },
+      {
+        "object": "diamond",
+        "color": "cyan",
+        "size": "big",
+        "x": 0.537824422992114,
+        "y": 0.5000171951302166
+      }
+    ],
+    "image": "images/img_001211.png",
+    "bg": "#fef9e7"
+  },
+  {
+    "id": 68,
+    "type": "binary",
+    "sentence": "a medium pink triangle is lower right of a medium cyan pentagon",
+    "direction": "lower right of",
+    "objects": [
+      {
+        "object": "triangle",
+        "color": "pink",
+        "size": "medium",
+        "x": 0.7389537940081675,
+        "y": 0.2797927592634942
+      },
+      {
+        "object": "pentagon",
+        "color": "cyan",
+        "size": "medium",
+        "x": 0.5154736667709642,
+        "y": 0.4931155476580519
+      }
+    ],
+    "image": "images/img_000994.png",
+    "bg": "#eafaf1"
+  },
+  {
+    "id": 69,
+    "type": "triple",
+    "sentence": "a small cyan pentagon and a small orange triangle are on the left and right of a medium cyan diamond",
+    "layout": "left and right",
+    "objects": [
+      {
+        "object": "pentagon",
+        "color": "cyan",
+        "size": "small",
+        "x": 0.2609108763778747,
+        "y": 0.5326192347891735
+      },
+      {
+        "object": "triangle",
+        "color": "orange",
+        "size": "small",
+        "x": 0.7739476884134052,
+        "y": 0.5118655452277697
+      },
+      {
+        "object": "diamond",
+        "color": "cyan",
+        "size": "medium",
+        "x": 0.5214480868483099,
+        "y": 0.504468686125845
+      }
+    ],
+    "image": "images/img_001926.png",
+    "bg": "#f4ecf7"
+  },
+  {
+    "id": 70,
+    "type": "binary",
+    "sentence": "a medium purple cube is below a big purple sphere",
+    "direction": "below",
+    "objects": [
+      {
+        "object": "cube",
+        "color": "purple",
+        "size": "medium",
+        "x": 0.518574069186499,
+        "y": 0.2620070096494023
+      },
+      {
+        "object": "sphere",
+        "color": "purple",
+        "size": "big",
+        "x": 0.4841640091787804,
+        "y": 0.4810180523734853
+      }
+    ],
+    "image": "images/img_001374.png",
+    "bg": "#eafaf1"
+  },
+  {
+    "id": 71,
+    "type": "triple",
+    "sentence": "a big cyan hexagon and a big red hexagon are on the top and bottom of a small cyan star",
+    "layout": "top and bottom",
+    "objects": [
+      {
+        "object": "hexagon",
+        "color": "cyan",
+        "size": "big",
+        "x": 0.4452147890209101,
+        "y": 0.7495688890415859
+      },
+      {
+        "object": "hexagon",
+        "color": "red",
+        "size": "big",
+        "x": 0.4533095399418228,
+        "y": 0.24291253027039142
+      },
+      {
+        "object": "star",
+        "color": "cyan",
+        "size": "small",
+        "x": 0.47314159687073837,
+        "y": 0.49270712858329885
+      }
+    ],
+    "image": "images/img_001941.png",
+    "bg": "#fdf2f8"
+  },
+  {
+    "id": 72,
+    "type": "binary",
+    "sentence": "a small red diamond is to the left of a big purple diamond",
+    "direction": "to the left of",
+    "objects": [
+      {
+        "object": "diamond",
+        "color": "red",
+        "size": "small",
+        "x": 0.25600139150264106,
+        "y": 0.5120911477314647
+      },
+      {
+        "object": "diamond",
+        "color": "purple",
+        "size": "big",
+        "x": 0.5353636800549045,
+        "y": 0.48222052033379553
+      }
+    ],
+    "image": "images/img_000979.png",
+    "bg": "#f5f5f5"
+  },
+  {
+    "id": 73,
+    "type": "binary",
+    "sentence": "a medium pink diamond is below a big blue triangle",
+    "direction": "below",
+    "objects": [
+      {
+        "object": "diamond",
+        "color": "pink",
+        "size": "medium",
+        "x": 0.5323236315467413,
+        "y": 0.28555495477227016
+      },
+      {
+        "object": "triangle",
+        "color": "blue",
+        "size": "big",
+        "x": 0.5096755719495693,
+        "y": 0.5058087239591014
+      }
+    ],
+    "image": "images/img_001424.png",
+    "bg": "#eaf4fb"
+  },
+  {
+    "id": 74,
+    "type": "single",
+    "sentence": "a big pink diamond appears at the top right of the image",
+    "position": "top right",
+    "objects": [
+      {
+        "object": "diamond",
+        "color": "pink",
+        "size": "big",
+        "x": 0.7134917839277841,
+        "y": 0.7695764121252157
+      }
+    ],
+    "image": "images/img_000125.png",
+    "bg": "#f4ecf7"
+  },
+  {
+    "id": 75,
+    "type": "binary",
+    "sentence": "a small cyan cube is lower left of a small green cube",
+    "direction": "lower left of",
+    "objects": [
+      {
+        "object": "cube",
+        "color": "cyan",
+        "size": "small",
+        "x": 0.32083732441466345,
+        "y": 0.3114927472293547
+      },
+      {
+        "object": "cube",
+        "color": "green",
+        "size": "small",
+        "x": 0.5201046430363787,
+        "y": 0.5116057251400568
+      }
+    ],
+    "image": "images/img_000871.png",
+    "bg": "#e8f8f5"
+  },
+  {
+    "id": 76,
+    "type": "single",
+    "sentence": "a small blue cross appears at the left of the image",
+    "position": "left",
+    "objects": [
+      {
+        "object": "cross",
+        "color": "blue",
+        "size": "small",
+        "x": 0.2613363573786574,
+        "y": 0.5077716767615637
+      }
+    ],
+    "image": "images/img_000152.png",
+    "bg": "#f5f5f5"
+  },
+  {
+    "id": 77,
+    "type": "single",
+    "sentence": "a small blue star appears at the left of the image",
+    "position": "left",
+    "objects": [
+      {
+        "object": "star",
+        "color": "blue",
+        "size": "small",
+        "x": 0.28794507074836495,
+        "y": 0.47243017049812686
+      }
+    ],
+    "image": "images/img_000404.png",
+    "bg": "#fef9e7"
+  },
+  {
+    "id": 78,
+    "type": "binary",
+    "sentence": "a medium cyan pentagon is to the left of a medium green sphere",
+    "direction": "to the left of",
+    "objects": [
+      {
+        "object": "pentagon",
+        "color": "cyan",
+        "size": "medium",
+        "x": 0.2631334426144043,
+        "y": 0.5181734385059442
+      },
+      {
+        "object": "sphere",
+        "color": "green",
+        "size": "medium",
+        "x": 0.5101760390166151,
+        "y": 0.5313646661431934
+      }
+    ],
+    "image": "images/img_000653.png",
+    "bg": "#f4ecf7"
+  },
+  {
+    "id": 79,
+    "type": "single",
+    "sentence": "a big orange diamond appears at the top of the image",
+    "position": "top",
+    "objects": [
+      {
+        "object": "diamond",
+        "color": "orange",
+        "size": "big",
+        "x": 0.5168925918628089,
+        "y": 0.7874720003341095
+      }
+    ],
+    "image": "images/img_000429.png",
+    "bg": "#f4ecf7"
+  },
+  {
+    "id": 80,
+    "type": "single",
+    "sentence": "a medium purple cube appears at the top left of the image",
+    "position": "top left",
+    "objects": [
+      {
+        "object": "cube",
+        "color": "purple",
+        "size": "medium",
+        "x": 0.2847398714946016,
+        "y": 0.7506190140647725
+      }
+    ],
+    "image": "images/img_000122.png",
+    "bg": "#f5f5f5"
+  },
+  {
+    "id": 81,
+    "type": "single",
+    "sentence": "a small green cross appears at the center of the image",
+    "position": "center",
+    "objects": [
+      {
+        "object": "cross",
+        "color": "green",
+        "size": "small",
+        "x": 0.5019155532323264,
+        "y": 0.5271254794875964
+      }
+    ],
+    "image": "images/img_000319.png",
+    "bg": "#fdf6e3"
+  },
+  {
+    "id": 82,
+    "type": "binary",
+    "sentence": "a medium green sphere is upper right of a medium purple sphere",
+    "direction": "upper right of",
+    "objects": [
+      {
+        "object": "sphere",
+        "color": "green",
+        "size": "medium",
+        "x": 0.6678620690131148,
+        "y": 0.7531735423217584
+      },
+      {
+        "object": "sphere",
+        "color": "purple",
+        "size": "medium",
+        "x": 0.4658304636383244,
+        "y": 0.516614524911558
+      }
+    ],
+    "image": "images/img_000534.png",
+    "bg": "#fdf6e3"
+  },
+  {
+    "id": 83,
+    "type": "binary",
+    "sentence": "a small blue star is lower right of a medium cyan cube",
+    "direction": "lower right of",
+    "objects": [
+      {
+        "object": "star",
+        "color": "blue",
+        "size": "small",
+        "x": 0.7204907026084167,
+        "y": 0.34769091952176906
+      },
+      {
+        "object": "cube",
+        "color": "cyan",
+        "size": "medium",
+        "x": 0.4810445225756549,
+        "y": 0.5291602201085198
+      }
+    ],
+    "image": "images/img_001133.png",
+    "bg": "#fdf6e3"
+  },
+  {
+    "id": 84,
+    "type": "binary",
+    "sentence": "a big blue cross is to the left of a medium purple hexagon",
+    "direction": "to the left of",
+    "objects": [
+      {
+        "object": "cross",
+        "color": "blue",
+        "size": "big",
+        "x": 0.2262903708705206,
+        "y": 0.43054849685669366
+      },
+      {
+        "object": "hexagon",
+        "color": "purple",
+        "size": "medium",
+        "x": 0.47057512362967024,
+        "y": 0.4666036090110866
+      }
+    ],
+    "image": "images/img_000619.png",
+    "bg": "#f4ecf7"
+  },
+  {
+    "id": 85,
+    "type": "binary",
+    "sentence": "a small green sphere is below a big pink cross",
+    "direction": "below",
+    "objects": [
+      {
+        "object": "sphere",
+        "color": "green",
+        "size": "small",
+        "x": 0.49978984242574664,
+        "y": 0.30596192670153616
+      },
+      {
+        "object": "cross",
+        "color": "pink",
+        "size": "big",
+        "x": 0.4709776214612978,
+        "y": 0.524475329170141
+      }
+    ],
+    "image": "images/img_000674.png",
+    "bg": "#f4ecf7"
+  },
+  {
+    "id": 86,
+    "type": "triple",
+    "sentence": "a small cyan diamond and a medium cyan hexagon are on the left and right of a small purple pentagon",
+    "layout": "left and right",
+    "objects": [
+      {
+        "object": "diamond",
+        "color": "cyan",
+        "size": "small",
+        "x": 0.2726224413787655,
+        "y": 0.547413086907522
+      },
+      {
+        "object": "hexagon",
+        "color": "cyan",
+        "size": "medium",
+        "x": 0.8184293594681379,
+        "y": 0.5179818952605497
+      },
+      {
+        "object": "pentagon",
+        "color": "purple",
+        "size": "small",
+        "x": 0.5276221142969031,
+        "y": 0.5244762106607158
+      }
+    ],
+    "image": "images/img_001521.png",
+    "bg": "#fef9e7"
+  },
+  {
+    "id": 87,
+    "type": "binary",
+    "sentence": "a big pink star is lower left of a small cyan diamond",
+    "direction": "lower left of",
+    "objects": [
+      {
+        "object": "star",
+        "color": "pink",
+        "size": "big",
+        "x": 0.3052042080879216,
+        "y": 0.3165565052254142
+      },
+      {
+        "object": "diamond",
+        "color": "cyan",
+        "size": "small",
+        "x": 0.4691600884172679,
+        "y": 0.5285074105677451
+      }
+    ],
+    "image": "images/img_001027.png",
+    "bg": "#e8f8f5"
+  },
+  {
+    "id": 88,
+    "type": "binary",
+    "sentence": "a small orange cube is upper left of a small pink cross",
+    "direction": "upper left of",
+    "objects": [
+      {
+        "object": "cube",
+        "color": "orange",
+        "size": "small",
+        "x": 0.2912198200047201,
+        "y": 0.6623085468015533
+      },
+      {
+        "object": "cross",
+        "color": "pink",
+        "size": "small",
+        "x": 0.5301981787963516,
+        "y": 0.4937909095336823
+      }
+    ],
+    "image": "images/img_000528.png",
+    "bg": "#f4ecf7"
+  },
+  {
+    "id": 89,
+    "type": "single",
+    "sentence": "a small cyan cross appears at the top left of the image",
+    "position": "top left",
+    "objects": [
+      {
+        "object": "cross",
+        "color": "cyan",
+        "size": "small",
+        "x": 0.21443512886739374,
+        "y": 0.7787487826149977
+      }
+    ],
+    "image": "images/img_000410.png",
+    "bg": "#eaf4fb"
+  },
+  {
+    "id": 90,
+    "type": "triple",
+    "sentence": "a big orange cross and a small orange pentagon are on the top and bottom of a small green diamond",
+    "layout": "top and bottom",
+    "objects": [
+      {
+        "object": "cross",
+        "color": "orange",
+        "size": "big",
+        "x": 0.5508109999350405,
+        "y": 0.7853416866818369
+      },
+      {
+        "object": "pentagon",
+        "color": "orange",
+        "size": "small",
+        "x": 0.5442747905087991,
+        "y": 0.24034779058688122
+      },
+      {
+        "object": "diamond",
+        "color": "green",
+        "size": "small",
+        "x": 0.5254581547055607,
+        "y": 0.5179215232303088
+      }
+    ],
+    "image": "images/img_001576.png",
+    "bg": "#f5f5f5"
+  },
+  {
+    "id": 91,
+    "type": "single",
+    "sentence": "a medium blue cross appears at the bottom left of the image",
+    "position": "bottom left",
+    "objects": [
+      {
+        "object": "cross",
+        "color": "blue",
+        "size": "medium",
+        "x": 0.22983351060204366,
+        "y": 0.2177449322048457
+      }
+    ],
+    "image": "images/img_000249.png",
+    "bg": "#fdf2f8"
+  },
+  {
+    "id": 92,
+    "type": "triple",
+    "sentence": "a medium cyan star and a big red pentagon are on the top and bottom of a medium pink sphere",
+    "layout": "top and bottom",
+    "objects": [
+      {
+        "object": "star",
+        "color": "cyan",
+        "size": "medium",
+        "x": 0.5504122902010793,
+        "y": 0.7365142650525701
+      },
+      {
+        "object": "pentagon",
+        "color": "red",
+        "size": "big",
+        "x": 0.5022987295280523,
+        "y": 0.2358260149111855
+      },
+      {
+        "object": "sphere",
+        "color": "pink",
+        "size": "medium",
+        "x": 0.5296230384841806,
+        "y": 0.5152122411487028
+      }
+    ],
+    "image": "images/img_001854.png",
+    "bg": "#fdf6e3"
+  },
+  {
+    "id": 93,
+    "type": "binary",
+    "sentence": "a big blue pentagon is below a medium purple sphere",
+    "direction": "below",
+    "objects": [
+      {
+        "object": "pentagon",
+        "color": "blue",
+        "size": "big",
+        "x": 0.5351112743089712,
+        "y": 0.20453465641107735
+      },
+      {
+        "object": "sphere",
+        "color": "purple",
+        "size": "medium",
+        "x": 0.5034553560436646,
+        "y": 0.4745282990885927
+      }
+    ],
+    "image": "images/img_000597.png",
+    "bg": "#f4ecf7"
+  },
+  {
+    "id": 94,
+    "type": "triple",
+    "sentence": "a small yellow star and a medium yellow sphere are on the left and right of a big pink triangle",
+    "layout": "left and right",
+    "objects": [
+      {
+        "object": "star",
+        "color": "yellow",
+        "size": "small",
+        "x": 0.262225622397739,
+        "y": 0.5330463200212159
+      },
+      {
+        "object": "sphere",
+        "color": "yellow",
+        "size": "medium",
+        "x": 0.7973479616663564,
+        "y": 0.5467348231591742
+      },
+      {
+        "object": "triangle",
+        "color": "pink",
+        "size": "big",
+        "x": 0.520189843916123,
+        "y": 0.519234934212246
+      }
+    ],
+    "image": "images/img_001953.png",
+    "bg": "#f4ecf7"
+  },
+  {
+    "id": 95,
+    "type": "single",
+    "sentence": "a small cyan diamond appears at the right of the image",
+    "position": "right",
+    "objects": [
+      {
+        "object": "diamond",
+        "color": "cyan",
+        "size": "small",
+        "x": 0.7713518478684993,
+        "y": 0.47342313146942416
+      }
+    ],
+    "image": "images/img_000081.png",
+    "bg": "#fdf6e3"
+  },
+  {
+    "id": 96,
+    "type": "binary",
+    "sentence": "a medium pink hexagon is lower left of a big pink sphere",
+    "direction": "lower left of",
+    "objects": [
+      {
+        "object": "hexagon",
+        "color": "pink",
+        "size": "medium",
+        "x": 0.3262878174201741,
+        "y": 0.3457935484732017
+      },
+      {
+        "object": "sphere",
+        "color": "pink",
+        "size": "big",
+        "x": 0.48828895666944544,
+        "y": 0.5244296605228962
+      }
+    ],
+    "image": "images/img_001233.png",
+    "bg": "#f5f5f5"
+  },
+  {
+    "id": 97,
+    "type": "binary",
+    "sentence": "a big cyan cube is lower right of a big purple cross",
+    "direction": "lower right of",
+    "objects": [
+      {
+        "object": "cube",
+        "color": "cyan",
+        "size": "big",
+        "x": 0.6926341491823845,
+        "y": 0.348018695903045
+      },
+      {
+        "object": "cross",
+        "color": "purple",
+        "size": "big",
+        "x": 0.4722941285791413,
+        "y": 0.5304181504124361
+      }
+    ],
+    "image": "images/img_001271.png",
+    "bg": "#fdf2f8"
+  },
+  {
+    "id": 98,
+    "type": "single",
+    "sentence": "a big blue cube appears at the bottom right of the image",
+    "position": "bottom right",
+    "objects": [
+      {
+        "object": "cube",
+        "color": "blue",
+        "size": "big",
+        "x": 0.7208531238965069,
+        "y": 0.2462915005511114
+      }
+    ],
+    "image": "images/img_000148.png",
+    "bg": "#f4ecf7"
+  },
+  {
+    "id": 99,
+    "type": "triple",
+    "sentence": "a medium purple hexagon and a medium cyan pentagon are on the top and bottom of a small purple triangle",
+    "layout": "top and bottom",
+    "objects": [
+      {
+        "object": "hexagon",
+        "color": "purple",
+        "size": "medium",
+        "x": 0.5136869821610535,
+        "y": 0.752208358748754
+      },
+      {
+        "object": "pentagon",
+        "color": "cyan",
+        "size": "medium",
+        "x": 0.5219979844209218,
+        "y": 0.2347471599291236
+      },
+      {
+        "object": "triangle",
+        "color": "purple",
+        "size": "small",
+        "x": 0.5100154011994564,
+        "y": 0.49028383204715476
+      }
+    ],
+    "image": "images/img_001999.png",
+    "bg": "#fef9e7"
+  },
+  {
+    "id": 100,
+    "type": "triple",
+    "sentence": "a medium cyan sphere and a medium green pentagon are on the left and right of a big red cross",
+    "layout": "left and right",
+    "objects": [
+      {
+        "object": "sphere",
+        "color": "cyan",
+        "size": "medium",
+        "x": 0.2047638490641897,
+        "y": 0.5317404162282805
+      },
+      {
+        "object": "pentagon",
+        "color": "green",
+        "size": "medium",
+        "x": 0.7397225098939154,
+        "y": 0.5153100457980511
+      },
+      {
+        "object": "cross",
+        "color": "red",
+        "size": "big",
+        "x": 0.4733958262386662,
+        "y": 0.5114084767526751
+      }
+    ],
+    "image": "images/img_001791.png",
+    "bg": "#eaf4fb"
+  },
+  {
+    "id": 101,
+    "type": "triple",
+    "sentence": "a big cyan cross and a big blue diamond are on the left and right of a big green diamond",
+    "layout": "left and right",
+    "objects": [
+      {
+        "object": "cross",
+        "color": "cyan",
+        "size": "big",
+        "x": 0.2462329617201492,
+        "y": 0.47796431298831676
+      },
+      {
+        "object": "diamond",
+        "color": "blue",
+        "size": "big",
+        "x": 0.792901956771628,
+        "y": 0.46795288555924713
+      },
+      {
+        "object": "diamond",
+        "color": "green",
+        "size": "big",
+        "x": 0.528759585193014,
+        "y": 0.47715354868661575
+      }
+    ],
+    "image": "images/img_001729.png",
+    "bg": "#f4ecf7"
+  },
+  {
+    "id": 102,
+    "type": "binary",
+    "sentence": "a medium purple pentagon is to the right of a small pink triangle",
+    "direction": "to the right of",
+    "objects": [
+      {
+        "object": "pentagon",
+        "color": "purple",
+        "size": "medium",
+        "x": 0.6938225747052966,
+        "y": 0.52360010680177
+      },
+      {
+        "object": "triangle",
+        "color": "pink",
+        "size": "small",
+        "x": 0.4684181537198108,
+        "y": 0.501316146005612
+      }
+    ],
+    "image": "images/img_000827.png",
+    "bg": "#e8f8f5"
+  },
+  {
+    "id": 103,
+    "type": "single",
+    "sentence": "a big green triangle appears at the top left of the image",
+    "position": "top left",
+    "objects": [
+      {
+        "object": "triangle",
+        "color": "green",
+        "size": "big",
+        "x": 0.2774024003290711,
+        "y": 0.7550894427545036
+      }
+    ],
+    "image": "images/img_000243.png",
+    "bg": "#f5f5f5"
+  },
+  {
+    "id": 104,
+    "type": "triple",
+    "sentence": "a big pink diamond and a big cyan cube are on the left and right of a small cyan triangle",
+    "layout": "left and right",
+    "objects": [
+      {
+        "object": "diamond",
+        "color": "pink",
+        "size": "big",
+        "x": 0.2084081015896006,
+        "y": 0.4808211612029905
+      },
+      {
+        "object": "cube",
+        "color": "cyan",
+        "size": "big",
+        "x": 0.7854597262041128,
+        "y": 0.5208492313174213
+      },
+      {
+        "object": "triangle",
+        "color": "cyan",
+        "size": "small",
+        "x": 0.47791109655999353,
+        "y": 0.5091220589232758
+      }
+    ],
+    "image": "images/img_001705.png",
+    "bg": "#e8f8f5"
+  },
+  {
+    "id": 105,
+    "type": "binary",
+    "sentence": "a big pink diamond is upper right of a big yellow diamond",
+    "direction": "upper right of",
+    "objects": [
+      {
+        "object": "diamond",
+        "color": "pink",
+        "size": "big",
+        "x": 0.6526025564019186,
+        "y": 0.7084768885715268
+      },
+      {
+        "object": "diamond",
+        "color": "yellow",
+        "size": "big",
+        "x": 0.48486446861198196,
+        "y": 0.5100795749576656
+      }
+    ],
+    "image": "images/img_000854.png",
+    "bg": "#f5f5f5"
+  },
+  {
+    "id": 106,
+    "type": "triple",
+    "sentence": "a small pink diamond and a medium red hexagon are on the top and bottom of a big purple triangle",
+    "layout": "top and bottom",
+    "objects": [
+      {
+        "object": "diamond",
+        "color": "pink",
+        "size": "small",
+        "x": 0.49824091662282016,
+        "y": 0.7297779101970844
+      },
+      {
+        "object": "hexagon",
+        "color": "red",
+        "size": "medium",
+        "x": 0.5079796922551428,
+        "y": 0.23485890658870845
+      },
+      {
+        "object": "triangle",
+        "color": "purple",
+        "size": "big",
+        "x": 0.509411058440227,
+        "y": 0.4931669791325588
+      }
+    ],
+    "image": "images/img_001701.png",
+    "bg": "#fdf2f8"
+  },
+  {
+    "id": 107,
+    "type": "binary",
+    "sentence": "a medium pink cross is above a big cyan cube",
+    "direction": "above",
+    "objects": [
+      {
+        "object": "cross",
+        "color": "pink",
+        "size": "medium",
+        "x": 0.48137361958504443,
+        "y": 0.7336215052342615
+      },
+      {
+        "object": "cube",
+        "color": "cyan",
+        "size": "big",
+        "x": 0.4917878894634281,
+        "y": 0.4785692438167842
+      }
+    ],
+    "image": "images/img_001150.png",
+    "bg": "#fdf2f8"
+  },
+  {
+    "id": 108,
+    "type": "binary",
+    "sentence": "a small blue star is upper left of a small orange cross",
+    "direction": "upper left of",
+    "objects": [
+      {
+        "object": "star",
+        "color": "blue",
+        "size": "small",
+        "x": 0.2598820047675278,
+        "y": 0.7091639337619238
+      },
+      {
+        "object": "cross",
+        "color": "orange",
+        "size": "small",
+        "x": 0.4912951376353626,
+        "y": 0.5158122162818045
+      }
+    ],
+    "image": "images/img_001084.png",
+    "bg": "#f4ecf7"
+  },
+  {
+    "id": 109,
+    "type": "triple",
+    "sentence": "a medium blue triangle and a small yellow pentagon are on the top and bottom of a medium purple pentagon",
+    "layout": "top and bottom",
+    "objects": [
+      {
+        "object": "triangle",
+        "color": "blue",
+        "size": "medium",
+        "x": 0.5235029663190062,
+        "y": 0.7145557053861504
+      },
+      {
+        "object": "pentagon",
+        "color": "yellow",
+        "size": "small",
+        "x": 0.468914285797494,
+        "y": 0.2289633954860896
+      },
+      {
+        "object": "pentagon",
+        "color": "purple",
+        "size": "medium",
+        "x": 0.4988666684064337,
+        "y": 0.48083407634501685
+      }
+    ],
+    "image": "images/img_001986.png",
+    "bg": "#eafaf1"
+  },
+  {
+    "id": 110,
+    "type": "single",
+    "sentence": "a small yellow pentagon appears at the top of the image",
+    "position": "top",
+    "objects": [
+      {
+        "object": "pentagon",
+        "color": "yellow",
+        "size": "small",
+        "x": 0.5224986439688716,
+        "y": 0.7621403724195112
+      }
+    ],
+    "image": "images/img_000079.png",
+    "bg": "#f5f5f5"
+  },
+  {
+    "id": 111,
+    "type": "single",
+    "sentence": "a medium green sphere appears at the center of the image",
+    "position": "center",
+    "objects": [
+      {
+        "object": "sphere",
+        "color": "green",
+        "size": "medium",
+        "x": 0.5369175351900805,
+        "y": 0.5069628883267591
+      }
+    ],
+    "image": "images/img_000330.png",
+    "bg": "#f4ecf7"
+  },
+  {
+    "id": 112,
+    "type": "triple",
+    "sentence": "a medium blue sphere and a medium blue pentagon are on the top and bottom of a medium orange pentagon",
+    "layout": "top and bottom",
+    "objects": [
+      {
+        "object": "sphere",
+        "color": "blue",
+        "size": "medium",
+        "x": 0.5201289404106372,
+        "y": 0.760242111683182
+      },
+      {
+        "object": "pentagon",
+        "color": "blue",
+        "size": "medium",
+        "x": 0.4829580736215522,
+        "y": 0.2344463976130793
+      },
+      {
+        "object": "pentagon",
+        "color": "orange",
+        "size": "medium",
+        "x": 0.5101446131016666,
+        "y": 0.4849325816045451
+      }
+    ],
+    "image": "images/img_001914.png",
+    "bg": "#e8f8f5"
+  },
+  {
+    "id": 113,
+    "type": "binary",
+    "sentence": "a big red hexagon is upper left of a medium cyan star",
+    "direction": "upper left of",
+    "objects": [
+      {
+        "object": "hexagon",
+        "color": "red",
+        "size": "big",
+        "x": 0.295213089138319,
+        "y": 0.6664267451015004
+      },
+      {
+        "object": "star",
+        "color": "cyan",
+        "size": "medium",
+        "x": 0.52189416100241,
+        "y": 0.48287316707452965
+      }
+    ],
+    "image": "images/img_000638.png",
+    "bg": "#f5f5f5"
+  },
+  {
+    "id": 114,
+    "type": "single",
+    "sentence": "a medium yellow star appears at the bottom of the image",
+    "position": "bottom",
+    "objects": [
+      {
+        "object": "star",
+        "color": "yellow",
+        "size": "medium",
+        "x": 0.48418140710243485,
+        "y": 0.2666414788568825
+      }
+    ],
+    "image": "images/img_000097.png",
+    "bg": "#eaf4fb"
+  },
+  {
+    "id": 115,
+    "type": "single",
+    "sentence": "a medium yellow diamond appears at the top left of the image",
+    "position": "top left",
+    "objects": [
+      {
+        "object": "diamond",
+        "color": "yellow",
+        "size": "medium",
+        "x": 0.23441526938708804,
+        "y": 0.7736276399322289
+      }
+    ],
+    "image": "images/img_000051.png",
+    "bg": "#eafaf1"
+  },
+  {
+    "id": 116,
+    "type": "triple",
+    "sentence": "a medium blue sphere and a big blue cube are on the left and right of a big pink cube",
+    "layout": "left and right",
+    "objects": [
+      {
+        "object": "sphere",
+        "color": "blue",
+        "size": "medium",
+        "x": 0.16442610870336638,
+        "y": 0.4852096841236964
+      },
+      {
+        "object": "cube",
+        "color": "blue",
+        "size": "big",
+        "x": 0.7430874032300745,
+        "y": 0.5216052578302628
+      },
+      {
+        "object": "cube",
+        "color": "pink",
+        "size": "big",
+        "x": 0.47251106714649055,
+        "y": 0.5070504777379352
+      }
+    ],
+    "image": "images/img_001580.png",
+    "bg": "#e8f8f5"
+  },
+  {
+    "id": 117,
+    "type": "triple",
+    "sentence": "a big orange cube and a medium red pentagon are on the left and right of a big orange star",
+    "layout": "left and right",
+    "objects": [
+      {
+        "object": "cube",
+        "color": "orange",
+        "size": "big",
+        "x": 0.2388602421533686,
+        "y": 0.4486272161704011
+      },
+      {
+        "object": "pentagon",
+        "color": "red",
+        "size": "medium",
+        "x": 0.8191400754038066,
+        "y": 0.49460952622193566
+      },
+      {
+        "object": "star",
+        "color": "orange",
+        "size": "big",
+        "x": 0.5094883756872884,
+        "y": 0.4766863029870389
+      }
+    ],
+    "image": "images/img_001920.png",
+    "bg": "#eaf4fb"
+  },
+  {
+    "id": 118,
+    "type": "triple",
+    "sentence": "a medium orange hexagon and a small green triangle are on the left and right of a medium blue triangle",
+    "layout": "left and right",
+    "objects": [
+      {
+        "object": "hexagon",
+        "color": "orange",
+        "size": "medium",
+        "x": 0.17961813625729608,
+        "y": 0.5226145214698481
+      },
+      {
+        "object": "triangle",
+        "color": "green",
+        "size": "small",
+        "x": 0.7633971676835241,
+        "y": 0.5130956775545561
+      },
+      {
+        "object": "triangle",
+        "color": "blue",
+        "size": "medium",
+        "x": 0.48889383958253774,
+        "y": 0.49444407331044354
+      }
+    ],
+    "image": "images/img_001929.png",
+    "bg": "#eaf4fb"
+  },
+  {
+    "id": 119,
+    "type": "binary",
+    "sentence": "a small yellow diamond is above a small purple cube",
+    "direction": "above",
+    "objects": [
+      {
+        "object": "diamond",
+        "color": "yellow",
+        "size": "small",
+        "x": 0.5427474703722601,
+        "y": 0.7081919472049049
+      },
+      {
+        "object": "cube",
+        "color": "purple",
+        "size": "small",
+        "x": 0.5188395904807875,
+        "y": 0.47559544654101266
+      }
+    ],
+    "image": "images/img_001357.png",
+    "bg": "#f4ecf7"
+  },
+  {
+    "id": 120,
+    "type": "triple",
+    "sentence": "a big orange pentagon and a medium purple pentagon are on the top and bottom of a big orange cube",
+    "layout": "top and bottom",
+    "objects": [
+      {
+        "object": "pentagon",
+        "color": "orange",
+        "size": "big",
+        "x": 0.4959775564337164,
+        "y": 0.7282700433841939
+      },
+      {
+        "object": "pentagon",
+        "color": "purple",
+        "size": "medium",
+        "x": 0.49248329537919866,
+        "y": 0.2373718742194965
+      },
+      {
+        "object": "cube",
+        "color": "orange",
+        "size": "big",
+        "x": 0.48941644732791967,
+        "y": 0.5041036406262485
+      }
+    ],
+    "image": "images/img_001939.png",
+    "bg": "#f5f5f5"
+  },
+  {
+    "id": 121,
+    "type": "binary",
+    "sentence": "a medium blue triangle is to the right of a small orange pentagon",
+    "direction": "to the right of",
+    "objects": [
+      {
+        "object": "triangle",
+        "color": "blue",
+        "size": "medium",
+        "x": 0.7373007186719596,
+        "y": 0.5063716686237751
+      },
+      {
+        "object": "pentagon",
+        "color": "orange",
+        "size": "small",
+        "x": 0.517491238404272,
+        "y": 0.49482678676240477
+      }
+    ],
+    "image": "images/img_001454.png",
+    "bg": "#fdf2f8"
+  },
+  {
+    "id": 122,
+    "type": "binary",
+    "sentence": "a small red diamond is to the right of a medium pink cube",
+    "direction": "to the right of",
+    "objects": [
+      {
+        "object": "diamond",
+        "color": "red",
+        "size": "small",
+        "x": 0.787117895074398,
+        "y": 0.48422060633570646
+      },
+      {
+        "object": "cube",
+        "color": "pink",
+        "size": "medium",
+        "x": 0.4980835287675565,
+        "y": 0.47578398031487323
+      }
+    ],
+    "image": "images/img_001340.png",
+    "bg": "#eaf4fb"
+  },
+  {
+    "id": 123,
+    "type": "triple",
+    "sentence": "a small yellow pentagon and a big green cube are on the left and right of a medium cyan diamond",
+    "layout": "left and right",
+    "objects": [
+      {
+        "object": "pentagon",
+        "color": "yellow",
+        "size": "small",
+        "x": 0.2461435491295624,
+        "y": 0.4522927749077879
+      },
+      {
+        "object": "cube",
+        "color": "green",
+        "size": "big",
+        "x": 0.7757120901718978,
+        "y": 0.4661040989215446
+      },
+      {
+        "object": "diamond",
+        "color": "cyan",
+        "size": "medium",
+        "x": 0.5024550884341503,
+        "y": 0.4752203982293898
+      }
+    ],
+    "image": "images/img_001852.png",
+    "bg": "#f5f5f5"
+  },
+  {
+    "id": 124,
+    "type": "binary",
+    "sentence": "a medium yellow star is to the left of a medium orange cross",
+    "direction": "to the left of",
+    "objects": [
+      {
+        "object": "star",
+        "color": "yellow",
+        "size": "medium",
+        "x": 0.2659586114741198,
+        "y": 0.4666273687983578
+      },
+      {
+        "object": "cross",
+        "color": "orange",
+        "size": "medium",
+        "x": 0.4999016013288157,
+        "y": 0.4768425985688525
+      }
+    ],
+    "image": "images/img_000579.png",
+    "bg": "#f4ecf7"
+  },
+  {
+    "id": 125,
+    "type": "single",
+    "sentence": "a small green triangle appears at the bottom left of the image",
+    "position": "bottom left",
+    "objects": [
+      {
+        "object": "triangle",
+        "color": "green",
+        "size": "small",
+        "x": 0.28574789437639925,
+        "y": 0.2232101567179302
+      }
+    ],
+    "image": "images/img_000021.png",
+    "bg": "#f4ecf7"
+  },
+  {
+    "id": 126,
+    "type": "binary",
+    "sentence": "a medium green diamond is upper right of a medium pink hexagon",
+    "direction": "upper right of",
+    "objects": [
+      {
+        "object": "diamond",
+        "color": "green",
+        "size": "medium",
+        "x": 0.7571113693950843,
+        "y": 0.7128163540076204
+      },
+      {
+        "object": "hexagon",
+        "color": "pink",
+        "size": "medium",
+        "x": 0.5354992205081958,
+        "y": 0.4954062951478865
+      }
+    ],
+    "image": "images/img_000820.png",
+    "bg": "#fdf6e3"
+  },
+  {
+    "id": 127,
+    "type": "single",
+    "sentence": "a big purple cube appears at the right of the image",
+    "position": "right",
+    "objects": [
+      {
+        "object": "cube",
+        "color": "purple",
+        "size": "big",
+        "x": 0.7197478676126894,
+        "y": 0.4790751602767858
+      }
+    ],
+    "image": "images/img_000212.png",
+    "bg": "#e8f8f5"
+  },
+  {
+    "id": 128,
+    "type": "single",
+    "sentence": "a big blue diamond appears at the right of the image",
+    "position": "right",
+    "objects": [
+      {
+        "object": "diamond",
+        "color": "blue",
+        "size": "big",
+        "x": 0.7257817442259187,
+        "y": 0.5081919188218532
+      }
+    ],
+    "image": "images/img_000186.png",
+    "bg": "#fdf6e3"
+  },
+  {
+    "id": 129,
+    "type": "binary",
+    "sentence": "a big green cross is above a small green triangle",
+    "direction": "above",
+    "objects": [
+      {
+        "object": "cross",
+        "color": "green",
+        "size": "big",
+        "x": 0.4533542357676553,
+        "y": 0.7629056012028884
+      },
+      {
+        "object": "triangle",
+        "color": "green",
+        "size": "small",
+        "x": 0.4786137963023463,
+        "y": 0.5123680663338314
+      }
+    ],
+    "image": "images/img_001114.png",
+    "bg": "#e8f8f5"
+  },
+  {
+    "id": 130,
+    "type": "binary",
+    "sentence": "a medium blue star is lower left of a big green pentagon",
+    "direction": "lower left of",
+    "objects": [
+      {
+        "object": "star",
+        "color": "blue",
+        "size": "medium",
+        "x": 0.31887668570758426,
+        "y": 0.3117152894273428
+      },
+      {
+        "object": "pentagon",
+        "color": "green",
+        "size": "big",
+        "x": 0.4920200180782735,
+        "y": 0.49652309493531765
+      }
+    ],
+    "image": "images/img_000514.png",
+    "bg": "#e8f8f5"
+  },
+  {
+    "id": 131,
+    "type": "single",
+    "sentence": "a small orange cube appears at the top left of the image",
+    "position": "top left",
+    "objects": [
+      {
+        "object": "cube",
+        "color": "orange",
+        "size": "small",
+        "x": 0.21484400713332868,
+        "y": 0.732070515268927
+      }
+    ],
+    "image": "images/img_000151.png",
+    "bg": "#fdf6e3"
+  },
+  {
+    "id": 132,
+    "type": "single",
+    "sentence": "a medium pink star appears at the left of the image",
+    "position": "left",
+    "objects": [
+      {
+        "object": "star",
+        "color": "pink",
+        "size": "medium",
+        "x": 0.24637594600131857,
+        "y": 0.48700004384590967
+      }
+    ],
+    "image": "images/img_000077.png",
+    "bg": "#f4ecf7"
+  },
+  {
+    "id": 133,
+    "type": "single",
+    "sentence": "a medium pink diamond appears at the bottom of the image",
+    "position": "bottom",
+    "objects": [
+      {
+        "object": "diamond",
+        "color": "pink",
+        "size": "medium",
+        "x": 0.4740880294063992,
+        "y": 0.25740156073451304
+      }
+    ],
+    "image": "images/img_000443.png",
+    "bg": "#fef9e7"
+  },
+  {
+    "id": 134,
+    "type": "binary",
+    "sentence": "a medium cyan pentagon is lower left of a big green triangle",
+    "direction": "lower left of",
+    "objects": [
+      {
+        "object": "pentagon",
+        "color": "cyan",
+        "size": "medium",
+        "x": 0.342800486533546,
+        "y": 0.2549599758167137
+      },
+      {
+        "object": "triangle",
+        "color": "green",
+        "size": "big",
+        "x": 0.5138380952505117,
+        "y": 0.4675654381068321
+      }
+    ],
+    "image": "images/img_001229.png",
+    "bg": "#eaf4fb"
+  },
+  {
+    "id": 135,
+    "type": "binary",
+    "sentence": "a medium blue cross is to the left of a medium green pentagon",
+    "direction": "to the left of",
+    "objects": [
+      {
+        "object": "cross",
+        "color": "blue",
+        "size": "medium",
+        "x": 0.20372242532333526,
+        "y": 0.47181164356619987
+      },
+      {
+        "object": "pentagon",
+        "color": "green",
+        "size": "medium",
+        "x": 0.46545294718749364,
+        "y": 0.5061209299345781
+      }
+    ],
+    "image": "images/img_001010.png",
+    "bg": "#e8f8f5"
+  },
+  {
+    "id": 136,
+    "type": "binary",
+    "sentence": "a big yellow sphere is below a small purple star",
+    "direction": "below",
+    "objects": [
+      {
+        "object": "sphere",
+        "color": "yellow",
+        "size": "big",
+        "x": 0.4932239089222397,
+        "y": 0.2672717573127228
+      },
+      {
+        "object": "star",
+        "color": "purple",
+        "size": "small",
+        "x": 0.5158435194054471,
+        "y": 0.517792751134774
+      }
+    ],
+    "image": "images/img_000889.png",
+    "bg": "#fdf6e3"
+  },
+  {
+    "id": 137,
+    "type": "single",
+    "sentence": "a small pink star appears at the top left of the image",
+    "position": "top left",
+    "objects": [
+      {
+        "object": "star",
+        "color": "pink",
+        "size": "small",
+        "x": 0.21866768817593846,
+        "y": 0.7287057521769267
+      }
+    ],
+    "image": "images/img_000145.png",
+    "bg": "#f5f5f5"
+  },
+  {
+    "id": 138,
+    "type": "single",
+    "sentence": "a big cyan cube appears at the bottom right of the image",
+    "position": "bottom right",
+    "objects": [
+      {
+        "object": "cube",
+        "color": "cyan",
+        "size": "big",
+        "x": 0.7828353342157174,
+        "y": 0.21122780783322084
+      }
+    ],
+    "image": "images/img_000127.png",
+    "bg": "#eaf4fb"
+  },
+  {
+    "id": 139,
+    "type": "binary",
+    "sentence": "a big pink star is upper left of a big blue cube",
+    "direction": "upper left of",
+    "objects": [
+      {
+        "object": "star",
+        "color": "pink",
+        "size": "big",
+        "x": 0.31678221850285354,
+        "y": 0.7140532656393618
+      },
+      {
+        "object": "cube",
+        "color": "blue",
+        "size": "big",
+        "x": 0.4801679014025391,
+        "y": 0.479543535564981
+      }
+    ],
+    "image": "images/img_001491.png",
+    "bg": "#eaf4fb"
+  },
+  {
+    "id": 140,
+    "type": "triple",
+    "sentence": "a small red diamond and a small red diamond are on the left and right of a medium red sphere",
+    "layout": "left and right",
+    "objects": [
+      {
+        "object": "diamond",
+        "color": "red",
+        "size": "small",
+        "x": 0.2672406023867414,
+        "y": 0.511832825669761
+      },
+      {
+        "object": "diamond",
+        "color": "red",
+        "size": "small",
+        "x": 0.803221388341302,
+        "y": 0.5213577896591186
+      },
+      {
+        "object": "sphere",
+        "color": "red",
+        "size": "medium",
+        "x": 0.5175967664830494,
+        "y": 0.5146266037438738
+      }
+    ],
+    "image": "images/img_001806.png",
+    "bg": "#f5f5f5"
+  },
+  {
+    "id": 141,
+    "type": "binary",
+    "sentence": "a small red pentagon is above a big blue triangle",
+    "direction": "above",
+    "objects": [
+      {
+        "object": "pentagon",
+        "color": "red",
+        "size": "small",
+        "x": 0.5096195236108507,
+        "y": 0.7083366846095581
+      },
+      {
+        "object": "triangle",
+        "color": "blue",
+        "size": "big",
+        "x": 0.5058174875954716,
+        "y": 0.491526536069603
+      }
+    ],
+    "image": "images/img_000543.png",
+    "bg": "#eafaf1"
+  },
+  {
+    "id": 142,
+    "type": "triple",
+    "sentence": "a big yellow cross and a big pink hexagon are on the left and right of a medium cyan sphere",
+    "layout": "left and right",
+    "objects": [
+      {
+        "object": "cross",
+        "color": "yellow",
+        "size": "big",
+        "x": 0.22841726461483938,
+        "y": 0.48935980431115644
+      },
+      {
+        "object": "hexagon",
+        "color": "pink",
+        "size": "big",
+        "x": 0.7450476759687852,
+        "y": 0.46926904532317854
+      },
+      {
+        "object": "sphere",
+        "color": "cyan",
+        "size": "medium",
+        "x": 0.4925259576670431,
+        "y": 0.4779774568279661
+      }
+    ],
+    "image": "images/img_001898.png",
+    "bg": "#f4ecf7"
+  },
+  {
+    "id": 143,
+    "type": "triple",
+    "sentence": "a big green hexagon and a big red triangle are on the left and right of a big yellow diamond",
+    "layout": "left and right",
+    "objects": [
+      {
+        "object": "hexagon",
+        "color": "green",
+        "size": "big",
+        "x": 0.22277402652473835,
+        "y": 0.4942319896164061
+      },
+      {
+        "object": "triangle",
+        "color": "red",
+        "size": "big",
+        "x": 0.7699495067507045,
+        "y": 0.4823940679611873
+      },
+      {
+        "object": "diamond",
+        "color": "yellow",
+        "size": "big",
+        "x": 0.5189728598819552,
+        "y": 0.4708941698901866
+      }
+    ],
+    "image": "images/img_001632.png",
+    "bg": "#f4ecf7"
+  },
+  {
+    "id": 144,
+    "type": "binary",
+    "sentence": "a medium pink cube is upper right of a medium red triangle",
+    "direction": "upper right of",
+    "objects": [
+      {
+        "object": "cube",
+        "color": "pink",
+        "size": "medium",
+        "x": 0.6989571197925891,
+        "y": 0.6903058068989943
+      },
+      {
+        "object": "triangle",
+        "color": "red",
+        "size": "medium",
+        "x": 0.486798862800061,
+        "y": 0.4926510041340543
+      }
+    ],
+    "image": "images/img_001117.png",
+    "bg": "#fdf2f8"
+  },
+  {
+    "id": 145,
+    "type": "binary",
+    "sentence": "a small purple sphere is lower right of a small cyan diamond",
+    "direction": "lower right of",
+    "objects": [
+      {
+        "object": "sphere",
+        "color": "purple",
+        "size": "small",
+        "x": 0.6707883306865975,
+        "y": 0.3288701437227342
+      },
+      {
+        "object": "diamond",
+        "color": "cyan",
+        "size": "small",
+        "x": 0.4850412940737458,
+        "y": 0.5121606899712916
+      }
+    ],
+    "image": "images/img_001153.png",
+    "bg": "#fdf6e3"
+  },
+  {
+    "id": 146,
+    "type": "triple",
+    "sentence": "a small cyan triangle and a medium cyan diamond are on the top and bottom of a medium green cross",
+    "layout": "top and bottom",
+    "objects": [
+      {
+        "object": "triangle",
+        "color": "cyan",
+        "size": "small",
+        "x": 0.46460857583572357,
+        "y": 0.7184181928839046
+      },
+      {
+        "object": "diamond",
+        "color": "cyan",
+        "size": "medium",
+        "x": 0.4681209824237253,
+        "y": 0.25134364791870356
+      },
+      {
+        "object": "cross",
+        "color": "green",
+        "size": "medium",
+        "x": 0.49440425806714605,
+        "y": 0.4816987521058458
+      }
+    ],
+    "image": "images/img_001690.png",
+    "bg": "#fef9e7"
+  },
+  {
+    "id": 147,
+    "type": "single",
+    "sentence": "a medium orange star appears at the bottom right of the image",
+    "position": "bottom right",
+    "objects": [
+      {
+        "object": "star",
+        "color": "orange",
+        "size": "medium",
+        "x": 0.7524737544916614,
+        "y": 0.24404030501641719
+      }
+    ],
+    "image": "images/img_000093.png",
+    "bg": "#fef9e7"
+  },
+  {
+    "id": 148,
+    "type": "binary",
+    "sentence": "a small orange cross is upper left of a small cyan pentagon",
+    "direction": "upper left of",
+    "objects": [
+      {
+        "object": "cross",
+        "color": "orange",
+        "size": "small",
+        "x": 0.3325449745023283,
+        "y": 0.7211729044688593
+      },
+      {
+        "object": "pentagon",
+        "color": "cyan",
+        "size": "small",
+        "x": 0.49926442812852373,
+        "y": 0.5387515746142043
+      }
+    ],
+    "image": "images/img_000576.png",
+    "bg": "#eafaf1"
+  },
+  {
+    "id": 149,
+    "type": "single",
+    "sentence": "a big purple triangle appears at the bottom left of the image",
+    "position": "bottom left",
+    "objects": [
+      {
+        "object": "triangle",
+        "color": "purple",
+        "size": "big",
+        "x": 0.279929355604179,
+        "y": 0.2543632596339545
+      }
+    ],
+    "image": "images/img_000205.png",
+    "bg": "#fdf6e3"
+  },
+  {
+    "id": 150,
+    "type": "triple",
+    "sentence": "a medium blue star and a medium blue sphere are on the top and bottom of a small pink sphere",
+    "layout": "top and bottom",
+    "objects": [
+      {
+        "object": "star",
+        "color": "blue",
+        "size": "medium",
+        "x": 0.49635039430127,
+        "y": 0.7533515667981551
+      },
+      {
+        "object": "sphere",
+        "color": "blue",
+        "size": "medium",
+        "x": 0.48758256368001057,
+        "y": 0.20928125027985123
+      },
+      {
+        "object": "sphere",
+        "color": "pink",
+        "size": "small",
+        "x": 0.5008513152174665,
+        "y": 0.474017652202797
+      }
+    ],
+    "image": "images/img_001627.png",
+    "bg": "#fef9e7"
+  },
+  {
+    "id": 151,
+    "type": "binary",
+    "sentence": "a medium purple diamond is to the right of a big purple cross",
+    "direction": "to the right of",
+    "objects": [
+      {
+        "object": "diamond",
+        "color": "purple",
+        "size": "medium",
+        "x": 0.7716546684329282,
+        "y": 0.5179253780878387
+      },
+      {
+        "object": "cross",
+        "color": "purple",
+        "size": "big",
+        "x": 0.51937231252318,
+        "y": 0.49472504068245754
+      }
+    ],
+    "image": "images/img_001092.png",
+    "bg": "#fdf6e3"
+  },
+  {
+    "id": 152,
+    "type": "triple",
+    "sentence": "a medium blue cross and a big green pentagon are on the top and bottom of a small red diamond",
+    "layout": "top and bottom",
+    "objects": [
+      {
+        "object": "cross",
+        "color": "blue",
+        "size": "medium",
+        "x": 0.49616278336017144,
+        "y": 0.7419442881302413
+      },
+      {
+        "object": "pentagon",
+        "color": "green",
+        "size": "big",
+        "x": 0.48795486067452104,
+        "y": 0.21955478691782604
+      },
+      {
+        "object": "diamond",
+        "color": "red",
+        "size": "small",
+        "x": 0.48712489392333935,
+        "y": 0.49644873536924145
+      }
+    ],
+    "image": "images/img_001988.png",
+    "bg": "#fef9e7"
+  },
+  {
+    "id": 153,
+    "type": "binary",
+    "sentence": "a medium blue cross is below a big pink sphere",
+    "direction": "below",
+    "objects": [
+      {
+        "object": "cross",
+        "color": "blue",
+        "size": "medium",
+        "x": 0.5381913957196776,
+        "y": 0.23535972506707004
+      },
+      {
+        "object": "sphere",
+        "color": "pink",
+        "size": "big",
+        "x": 0.5163579499075713,
+        "y": 0.5221638412151121
+      }
+    ],
+    "image": "images/img_001404.png",
+    "bg": "#fdf2f8"
+  },
+  {
+    "id": 154,
+    "type": "triple",
+    "sentence": "a medium green triangle and a medium green hexagon are on the top and bottom of a small orange sphere",
+    "layout": "top and bottom",
+    "objects": [
+      {
+        "object": "triangle",
+        "color": "green",
+        "size": "medium",
+        "x": 0.5100320999484514,
+        "y": 0.7745818418047311
+      },
+      {
+        "object": "hexagon",
+        "color": "green",
+        "size": "medium",
+        "x": 0.5168913534929748,
+        "y": 0.24635177145878812
+      },
+      {
+        "object": "sphere",
+        "color": "orange",
+        "size": "small",
+        "x": 0.5288759104076776,
+        "y": 0.5236101767946191
+      }
+    ],
+    "image": "images/img_001841.png",
+    "bg": "#f4ecf7"
+  },
+  {
+    "id": 155,
+    "type": "triple",
+    "sentence": "a big green hexagon and a medium pink diamond are on the top and bottom of a small pink star",
+    "layout": "top and bottom",
+    "objects": [
+      {
+        "object": "hexagon",
+        "color": "green",
+        "size": "big",
+        "x": 0.5194908352712732,
+        "y": 0.7551590729308876
+      },
+      {
+        "object": "diamond",
+        "color": "pink",
+        "size": "medium",
+        "x": 0.5182970392315683,
+        "y": 0.2597940132617202
+      },
+      {
+        "object": "star",
+        "color": "pink",
+        "size": "small",
+        "x": 0.5170946984062016,
+        "y": 0.5016772689971685
+      }
+    ],
+    "image": "images/img_001638.png",
+    "bg": "#fdf6e3"
+  },
+  {
+    "id": 156,
+    "type": "binary",
+    "sentence": "a small orange pentagon is upper right of a small purple cube",
+    "direction": "upper right of",
+    "objects": [
+      {
+        "object": "pentagon",
+        "color": "orange",
+        "size": "small",
+        "x": 0.6944988606742357,
+        "y": 0.7193510062165336
+      },
+      {
+        "object": "cube",
+        "color": "purple",
+        "size": "small",
+        "x": 0.4960629560697749,
+        "y": 0.519375411755422
+      }
+    ],
+    "image": "images/img_001345.png",
+    "bg": "#e8f8f5"
+  },
+  {
+    "id": 157,
+    "type": "triple",
+    "sentence": "a small cyan triangle and a small red triangle are on the left and right of a medium purple cube",
+    "layout": "left and right",
+    "objects": [
+      {
+        "object": "triangle",
+        "color": "cyan",
+        "size": "small",
+        "x": 0.23610121234078724,
+        "y": 0.4658727361663858
+      },
+      {
+        "object": "triangle",
+        "color": "red",
+        "size": "small",
+        "x": 0.7761491521016887,
+        "y": 0.4752975047476872
+      },
+      {
+        "object": "cube",
+        "color": "purple",
+        "size": "medium",
+        "x": 0.5027039026607507,
+        "y": 0.4940883633566472
+      }
+    ],
+    "image": "images/img_001886.png",
+    "bg": "#f5f5f5"
+  },
+  {
+    "id": 158,
+    "type": "triple",
+    "sentence": "a big yellow hexagon and a small purple pentagon are on the top and bottom of a big yellow diamond",
+    "layout": "top and bottom",
+    "objects": [
+      {
+        "object": "hexagon",
+        "color": "yellow",
+        "size": "big",
+        "x": 0.516957715669838,
+        "y": 0.7416293754082732
+      },
+      {
+        "object": "pentagon",
+        "color": "purple",
+        "size": "small",
+        "x": 0.5068672029168837,
+        "y": 0.23951861755508858
+      },
+      {
+        "object": "diamond",
+        "color": "yellow",
+        "size": "big",
+        "x": 0.48972894026730956,
+        "y": 0.48130256594607707
+      }
+    ],
+    "image": "images/img_001706.png",
+    "bg": "#eaf4fb"
+  },
+  {
+    "id": 159,
+    "type": "binary",
+    "sentence": "a small yellow hexagon is lower right of a medium cyan sphere",
+    "direction": "lower right of",
+    "objects": [
+      {
+        "object": "hexagon",
+        "color": "yellow",
+        "size": "small",
+        "x": 0.7331516185578011,
+        "y": 0.31756437138982535
+      },
+      {
+        "object": "sphere",
+        "color": "cyan",
+        "size": "medium",
+        "x": 0.5236131742168103,
+        "y": 0.5303950533987347
+      }
+    ],
+    "image": "images/img_000858.png",
+    "bg": "#f5f5f5"
+  },
+  {
+    "id": 160,
+    "type": "binary",
+    "sentence": "a big orange pentagon is lower right of a big orange hexagon",
+    "direction": "lower right of",
+    "objects": [
+      {
+        "object": "pentagon",
+        "color": "orange",
+        "size": "big",
+        "x": 0.6853530235212625,
+        "y": 0.28815033192674483
+      },
+      {
+        "object": "hexagon",
+        "color": "orange",
+        "size": "big",
+        "x": 0.49204479011601887,
+        "y": 0.4649720361975904
+      }
+    ],
+    "image": "images/img_001363.png",
+    "bg": "#eaf4fb"
+  },
+  {
+    "id": 161,
+    "type": "binary",
+    "sentence": "a big green sphere is upper right of a small purple hexagon",
+    "direction": "upper right of",
+    "objects": [
+      {
+        "object": "sphere",
+        "color": "green",
+        "size": "big",
+        "x": 0.7489791121980197,
+        "y": 0.728746511975521
+      },
+      {
+        "object": "hexagon",
+        "color": "purple",
+        "size": "small",
+        "x": 0.5315930422341896,
+        "y": 0.4958785776077894
+      }
+    ],
+    "image": "images/img_000975.png",
+    "bg": "#fdf6e3"
+  },
+  {
+    "id": 162,
+    "type": "single",
+    "sentence": "a small cyan sphere appears at the top left of the image",
+    "position": "top left",
+    "objects": [
+      {
+        "object": "sphere",
+        "color": "cyan",
+        "size": "small",
+        "x": 0.27134737347602184,
+        "y": 0.7899684597449077
+      }
+    ],
+    "image": "images/img_000441.png",
+    "bg": "#eaf4fb"
+  },
+  {
+    "id": 163,
+    "type": "binary",
+    "sentence": "a small blue pentagon is below a medium pink diamond",
+    "direction": "below",
+    "objects": [
+      {
+        "object": "pentagon",
+        "color": "blue",
+        "size": "small",
+        "x": 0.47537764803529997,
+        "y": 0.2212048722066166
+      },
+      {
+        "object": "diamond",
+        "color": "pink",
+        "size": "medium",
+        "x": 0.4985213319511589,
+        "y": 0.49830517141760655
+      }
+    ],
+    "image": "images/img_000556.png",
+    "bg": "#f4ecf7"
+  },
+  {
+    "id": 164,
+    "type": "triple",
+    "sentence": "a big cyan triangle and a medium cyan triangle are on the left and right of a small blue cube",
+    "layout": "left and right",
+    "objects": [
+      {
+        "object": "triangle",
+        "color": "cyan",
+        "size": "big",
+        "x": 0.22546905793569214,
+        "y": 0.4993551921793824
+      },
+      {
+        "object": "triangle",
+        "color": "cyan",
+        "size": "medium",
+        "x": 0.7592211876219509,
+        "y": 0.5141282067941838
+      },
+      {
+        "object": "cube",
+        "color": "blue",
+        "size": "small",
+        "x": 0.508357865039305,
+        "y": 0.5244382348030265
+      }
+    ],
+    "image": "images/img_001774.png",
+    "bg": "#fdf2f8"
+  },
+  {
+    "id": 165,
+    "type": "single",
+    "sentence": "a big cyan star appears at the bottom right of the image",
+    "position": "bottom right",
+    "objects": [
+      {
+        "object": "star",
+        "color": "cyan",
+        "size": "big",
+        "x": 0.7725348528740369,
+        "y": 0.2190015074100747
+      }
+    ],
+    "image": "images/img_000474.png",
+    "bg": "#eaf4fb"
+  },
+  {
+    "id": 166,
+    "type": "single",
+    "sentence": "a medium red triangle appears at the center of the image",
+    "position": "center",
+    "objects": [
+      {
+        "object": "triangle",
+        "color": "red",
+        "size": "medium",
+        "x": 0.4942084765956571,
+        "y": 0.4835639559172972
+      }
+    ],
+    "image": "images/img_000463.png",
+    "bg": "#e8f8f5"
+  },
+  {
+    "id": 167,
+    "type": "single",
+    "sentence": "a big purple sphere appears at the bottom right of the image",
+    "position": "bottom right",
+    "objects": [
+      {
+        "object": "sphere",
+        "color": "purple",
+        "size": "big",
+        "x": 0.7585541495737568,
+        "y": 0.22509172186126924
+      }
+    ],
+    "image": "images/img_000398.png",
+    "bg": "#f4ecf7"
+  },
+  {
+    "id": 168,
+    "type": "single",
+    "sentence": "a small red triangle appears at the bottom right of the image",
+    "position": "bottom right",
+    "objects": [
+      {
+        "object": "triangle",
+        "color": "red",
+        "size": "small",
+        "x": 0.7549346705255783,
+        "y": 0.2636010611785837
+      }
+    ],
+    "image": "images/img_000166.png",
+    "bg": "#f4ecf7"
+  },
+  {
+    "id": 169,
+    "type": "triple",
+    "sentence": "a big green cross and a small blue cross are on the top and bottom of a big red triangle",
+    "layout": "top and bottom",
+    "objects": [
+      {
+        "object": "cross",
+        "color": "green",
+        "size": "big",
+        "x": 0.5432953408374013,
+        "y": 0.731479862256874
+      },
+      {
+        "object": "cross",
+        "color": "blue",
+        "size": "small",
+        "x": 0.5052590975530743,
+        "y": 0.2565050539971126
+      },
+      {
+        "object": "triangle",
+        "color": "red",
+        "size": "big",
+        "x": 0.5236559738907076,
+        "y": 0.5053395845903057
+      }
+    ],
+    "image": "images/img_001544.png",
+    "bg": "#f4ecf7"
+  },
+  {
+    "id": 170,
+    "type": "triple",
+    "sentence": "a small yellow cube and a big blue pentagon are on the left and right of a medium yellow pentagon",
+    "layout": "left and right",
+    "objects": [
+      {
+        "object": "cube",
+        "color": "yellow",
+        "size": "small",
+        "x": 0.2598048536643861,
+        "y": 0.5000228246265142
+      },
+      {
+        "object": "pentagon",
+        "color": "blue",
+        "size": "big",
+        "x": 0.7833412591598723,
+        "y": 0.49412634276233697
+      },
+      {
+        "object": "pentagon",
+        "color": "yellow",
+        "size": "medium",
+        "x": 0.5190523289529161,
+        "y": 0.4985513378953226
+      }
+    ],
+    "image": "images/img_001559.png",
+    "bg": "#fef9e7"
+  },
+  {
+    "id": 171,
+    "type": "single",
+    "sentence": "a medium yellow cross appears at the bottom left of the image",
+    "position": "bottom left",
+    "objects": [
+      {
+        "object": "cross",
+        "color": "yellow",
+        "size": "medium",
+        "x": 0.21619866830917886,
+        "y": 0.2328582520690522
+      }
+    ],
+    "image": "images/img_000069.png",
+    "bg": "#fdf2f8"
+  },
+  {
+    "id": 172,
+    "type": "triple",
+    "sentence": "a small blue diamond and a big orange pentagon are on the top and bottom of a medium red triangle",
+    "layout": "top and bottom",
+    "objects": [
+      {
+        "object": "diamond",
+        "color": "blue",
+        "size": "small",
+        "x": 0.48967179505178376,
+        "y": 0.7689683300624843
+      },
+      {
+        "object": "pentagon",
+        "color": "orange",
+        "size": "big",
+        "x": 0.5024622228784039,
+        "y": 0.23514243205746427
+      },
+      {
+        "object": "triangle",
+        "color": "red",
+        "size": "medium",
+        "x": 0.5194070858412347,
+        "y": 0.49330371144683643
+      }
+    ],
+    "image": "images/img_001833.png",
+    "bg": "#fdf2f8"
+  },
+  {
+    "id": 173,
+    "type": "binary",
+    "sentence": "a big yellow cross is below a small yellow pentagon",
+    "direction": "below",
+    "objects": [
+      {
+        "object": "cross",
+        "color": "yellow",
+        "size": "big",
+        "x": 0.4753466900243204,
+        "y": 0.24973875309241209
+      },
+      {
+        "object": "pentagon",
+        "color": "yellow",
+        "size": "small",
+        "x": 0.46748081255281915,
+        "y": 0.480025334233701
+      }
+    ],
+    "image": "images/img_001497.png",
+    "bg": "#eafaf1"
+  },
+  {
+    "id": 174,
+    "type": "binary",
+    "sentence": "a big yellow sphere is above a big green triangle",
+    "direction": "above",
+    "objects": [
+      {
+        "object": "sphere",
+        "color": "yellow",
+        "size": "big",
+        "x": 0.5045711230221562,
+        "y": 0.7555449576592145
+      },
+      {
+        "object": "triangle",
+        "color": "green",
+        "size": "big",
+        "x": 0.5312638137175257,
+        "y": 0.47174920800680636
+      }
+    ],
+    "image": "images/img_000557.png",
+    "bg": "#f4ecf7"
+  },
+  {
+    "id": 175,
+    "type": "binary",
+    "sentence": "a medium yellow star is to the left of a medium purple cross",
+    "direction": "to the left of",
+    "objects": [
+      {
+        "object": "star",
+        "color": "yellow",
+        "size": "medium",
+        "x": 0.2608370942347861,
+        "y": 0.5033645026705512
+      },
+      {
+        "object": "cross",
+        "color": "purple",
+        "size": "medium",
+        "x": 0.48449859102590215,
+        "y": 0.5181367709362111
+      }
+    ],
+    "image": "images/img_001232.png",
+    "bg": "#fdf2f8"
+  },
+  {
+    "id": 176,
+    "type": "binary",
+    "sentence": "a medium green triangle is above a big orange sphere",
+    "direction": "above",
+    "objects": [
+      {
+        "object": "triangle",
+        "color": "green",
+        "size": "medium",
+        "x": 0.4649904532292768,
+        "y": 0.7723138772051206
+      },
+      {
+        "object": "sphere",
+        "color": "orange",
+        "size": "big",
+        "x": 0.4709579941700132,
+        "y": 0.524578750991636
+      }
+    ],
+    "image": "images/img_001162.png",
+    "bg": "#fdf2f8"
+  },
+  {
+    "id": 177,
+    "type": "binary",
+    "sentence": "a medium orange diamond is upper left of a medium blue triangle",
+    "direction": "upper left of",
+    "objects": [
+      {
+        "object": "diamond",
+        "color": "orange",
+        "size": "medium",
+        "x": 0.2572177952609958,
+        "y": 0.7091737297187117
+      },
+      {
+        "object": "triangle",
+        "color": "blue",
+        "size": "medium",
+        "x": 0.47336161498146473,
+        "y": 0.5259075063739528
+      }
+    ],
+    "image": "images/img_000505.png",
+    "bg": "#fef9e7"
+  },
+  {
+    "id": 178,
+    "type": "triple",
+    "sentence": "a medium purple triangle and a big red sphere are on the left and right of a medium blue diamond",
+    "layout": "left and right",
+    "objects": [
+      {
+        "object": "triangle",
+        "color": "purple",
+        "size": "medium",
+        "x": 0.20345270726137957,
+        "y": 0.48717065765265566
+      },
+      {
+        "object": "sphere",
+        "color": "red",
+        "size": "big",
+        "x": 0.7711492940873277,
+        "y": 0.5005007752539311
+      },
+      {
+        "object": "diamond",
+        "color": "blue",
+        "size": "medium",
+        "x": 0.48666404533961694,
+        "y": 0.4946669486299029
+      }
+    ],
+    "image": "images/img_001810.png",
+    "bg": "#fdf2f8"
+  },
+  {
+    "id": 179,
+    "type": "triple",
+    "sentence": "a small yellow cube and a big red cube are on the top and bottom of a big pink sphere",
+    "layout": "top and bottom",
+    "objects": [
+      {
+        "object": "cube",
+        "color": "yellow",
+        "size": "small",
+        "x": 0.46931714166633226,
+        "y": 0.7455191160889036
+      },
+      {
+        "object": "cube",
+        "color": "red",
+        "size": "big",
+        "x": 0.494895095222649,
+        "y": 0.26846901265815143
+      },
+      {
+        "object": "sphere",
+        "color": "pink",
+        "size": "big",
+        "x": 0.49391830039449186,
+        "y": 0.5158066546663089
+      }
+    ],
+    "image": "images/img_001589.png",
+    "bg": "#fdf6e3"
+  },
+  {
+    "id": 180,
+    "type": "binary",
+    "sentence": "a medium orange cube is above a medium green hexagon",
+    "direction": "above",
+    "objects": [
+      {
+        "object": "cube",
+        "color": "orange",
+        "size": "medium",
+        "x": 0.5252628102306475,
+        "y": 0.6850436666981502
+      },
+      {
+        "object": "hexagon",
+        "color": "green",
+        "size": "medium",
+        "x": 0.4914613013024285,
+        "y": 0.4629674986959554
+      }
+    ],
+    "image": "images/img_000821.png",
+    "bg": "#f5f5f5"
+  },
+  {
+    "id": 181,
+    "type": "single",
+    "sentence": "a small purple star appears at the bottom left of the image",
+    "position": "bottom left",
+    "objects": [
+      {
+        "object": "star",
+        "color": "purple",
+        "size": "small",
+        "x": 0.22716563403389758,
+        "y": 0.2589501746210914
+      }
+    ],
+    "image": "images/img_000232.png",
+    "bg": "#e8f8f5"
+  },
+  {
+    "id": 182,
+    "type": "single",
+    "sentence": "a medium yellow hexagon appears at the center of the image",
+    "position": "center",
+    "objects": [
+      {
+        "object": "hexagon",
+        "color": "yellow",
+        "size": "medium",
+        "x": 0.5167028227067336,
+        "y": 0.46013530225749033
+      }
+    ],
+    "image": "images/img_000056.png",
+    "bg": "#eafaf1"
+  },
+  {
+    "id": 183,
+    "type": "binary",
+    "sentence": "a small red pentagon is below a big green triangle",
+    "direction": "below",
+    "objects": [
+      {
+        "object": "pentagon",
+        "color": "red",
+        "size": "small",
+        "x": 0.4580496461853042,
+        "y": 0.2886625032603846
+      },
+      {
+        "object": "triangle",
+        "color": "green",
+        "size": "big",
+        "x": 0.49356580664757754,
+        "y": 0.5276642508026521
+      }
+    ],
+    "image": "images/img_001169.png",
+    "bg": "#f5f5f5"
+  },
+  {
+    "id": 184,
+    "type": "triple",
+    "sentence": "a big purple star and a small red pentagon are on the left and right of a big yellow triangle",
+    "layout": "left and right",
+    "objects": [
+      {
+        "object": "star",
+        "color": "purple",
+        "size": "big",
+        "x": 0.20114186631696326,
+        "y": 0.45441228785120913
+      },
+      {
+        "object": "pentagon",
+        "color": "red",
+        "size": "small",
+        "x": 0.7468752014467072,
+        "y": 0.4664093261569091
+      },
+      {
+        "object": "triangle",
+        "color": "yellow",
+        "size": "big",
+        "x": 0.4912299725522473,
+        "y": 0.48381630220713906
+      }
+    ],
+    "image": "images/img_001862.png",
+    "bg": "#eaf4fb"
+  },
+  {
+    "id": 185,
+    "type": "triple",
+    "sentence": "a medium cyan cube and a big pink diamond are on the left and right of a big red diamond",
+    "layout": "left and right",
+    "objects": [
+      {
+        "object": "cube",
+        "color": "cyan",
+        "size": "medium",
+        "x": 0.2457636521826273,
+        "y": 0.48330955112967394
+      },
+      {
+        "object": "diamond",
+        "color": "pink",
+        "size": "big",
+        "x": 0.8218865695973805,
+        "y": 0.501292957773011
+      },
+      {
+        "object": "diamond",
+        "color": "red",
+        "size": "big",
+        "x": 0.5251010383313205,
+        "y": 0.48927305335832855
+      }
+    ],
+    "image": "images/img_001608.png",
+    "bg": "#eaf4fb"
+  },
+  {
+    "id": 186,
+    "type": "binary",
+    "sentence": "a big cyan cross is lower right of a medium green hexagon",
+    "direction": "lower right of",
+    "objects": [
+      {
+        "object": "cross",
+        "color": "cyan",
+        "size": "big",
+        "x": 0.7264965669537191,
+        "y": 0.25089943334687775
+      },
+      {
+        "object": "hexagon",
+        "color": "green",
+        "size": "medium",
+        "x": 0.5163121650418057,
+        "y": 0.4601090919139282
+      }
+    ],
+    "image": "images/img_000716.png",
+    "bg": "#fef9e7"
+  },
+  {
+    "id": 187,
+    "type": "single",
+    "sentence": "a medium orange diamond appears at the right of the image",
+    "position": "right",
+    "objects": [
+      {
+        "object": "diamond",
+        "color": "orange",
+        "size": "medium",
+        "x": 0.7753195612346331,
+        "y": 0.4914348103791568
+      }
+    ],
+    "image": "images/img_000347.png",
+    "bg": "#fdf6e3"
+  },
+  {
+    "id": 188,
+    "type": "single",
+    "sentence": "a big yellow star appears at the left of the image",
+    "position": "left",
+    "objects": [
+      {
+        "object": "star",
+        "color": "yellow",
+        "size": "big",
+        "x": 0.2808632308494484,
+        "y": 0.48524766560397803
+      }
+    ],
+    "image": "images/img_000220.png",
+    "bg": "#fdf2f8"
+  },
+  {
+    "id": 189,
+    "type": "binary",
+    "sentence": "a small red diamond is below a big orange star",
+    "direction": "below",
+    "objects": [
+      {
+        "object": "diamond",
+        "color": "red",
+        "size": "small",
+        "x": 0.4711765786115877,
+        "y": 0.2385964343305836
+      },
+      {
+        "object": "star",
+        "color": "orange",
+        "size": "big",
+        "x": 0.5037724977445007,
+        "y": 0.5081833221801465
+      }
+    ],
+    "image": "images/img_000797.png",
+    "bg": "#eafaf1"
+  },
+  {
+    "id": 190,
+    "type": "single",
+    "sentence": "a medium purple triangle appears at the center of the image",
+    "position": "center",
+    "objects": [
+      {
+        "object": "triangle",
+        "color": "purple",
+        "size": "medium",
+        "x": 0.509184766622076,
+        "y": 0.4792451391045235
+      }
+    ],
+    "image": "images/img_000214.png",
+    "bg": "#f4ecf7"
+  },
+  {
+    "id": 191,
+    "type": "single",
+    "sentence": "a medium green cross appears at the bottom right of the image",
+    "position": "bottom right",
+    "objects": [
+      {
+        "object": "cross",
+        "color": "green",
+        "size": "medium",
+        "x": 0.7890313962453158,
+        "y": 0.25763618547755357
+      }
+    ],
+    "image": "images/img_000067.png",
+    "bg": "#e8f8f5"
+  },
+  {
+    "id": 192,
+    "type": "single",
+    "sentence": "a small purple hexagon appears at the center of the image",
+    "position": "center",
+    "objects": [
+      {
+        "object": "hexagon",
+        "color": "purple",
+        "size": "small",
+        "x": 0.46600329319905276,
+        "y": 0.5110010030306639
+      }
+    ],
+    "image": "images/img_000227.png",
+    "bg": "#fef9e7"
+  },
+  {
+    "id": 193,
+    "type": "binary",
+    "sentence": "a medium purple star is upper left of a medium orange diamond",
+    "direction": "upper left of",
+    "objects": [
+      {
+        "object": "star",
+        "color": "purple",
+        "size": "medium",
+        "x": 0.33060271584137724,
+        "y": 0.643492027202135
+      },
+      {
+        "object": "diamond",
+        "color": "orange",
+        "size": "medium",
+        "x": 0.5100737377643846,
+        "y": 0.46891760467125715
+      }
+    ],
+    "image": "images/img_001228.png",
+    "bg": "#f5f5f5"
+  },
+  {
+    "id": 194,
+    "type": "single",
+    "sentence": "a medium green diamond appears at the right of the image",
+    "position": "right",
+    "objects": [
+      {
+        "object": "diamond",
+        "color": "green",
+        "size": "medium",
+        "x": 0.7687195978692165,
+        "y": 0.4835613811775138
+      }
+    ],
+    "image": "images/img_000451.png",
+    "bg": "#eaf4fb"
+  },
+  {
+    "id": 195,
+    "type": "binary",
+    "sentence": "a big cyan triangle is lower left of a medium pink diamond",
+    "direction": "lower left of",
+    "objects": [
+      {
+        "object": "triangle",
+        "color": "cyan",
+        "size": "big",
+        "x": 0.2859466698253274,
+        "y": 0.31053867929240364
+      },
+      {
+        "object": "diamond",
+        "color": "pink",
+        "size": "medium",
+        "x": 0.472341383271498,
+        "y": 0.5397964834408376
+      }
+    ],
+    "image": "images/img_000673.png",
+    "bg": "#fdf6e3"
+  },
+  {
+    "id": 196,
+    "type": "single",
+    "sentence": "a medium green pentagon appears at the center of the image",
+    "position": "center",
+    "objects": [
+      {
+        "object": "pentagon",
+        "color": "green",
+        "size": "medium",
+        "x": 0.4617530316994858,
+        "y": 0.5069287340072968
+      }
+    ],
+    "image": "images/img_000447.png",
+    "bg": "#eaf4fb"
+  },
+  {
+    "id": 197,
+    "type": "triple",
+    "sentence": "a medium orange hexagon and a big pink triangle are on the left and right of a big red diamond",
+    "layout": "left and right",
+    "objects": [
+      {
+        "object": "hexagon",
+        "color": "orange",
+        "size": "medium",
+        "x": 0.23701965228568356,
+        "y": 0.44540697926414147
+      },
+      {
+        "object": "triangle",
+        "color": "pink",
+        "size": "big",
+        "x": 0.7873806358295065,
+        "y": 0.49319761766287107
+      },
+      {
+        "object": "diamond",
+        "color": "red",
+        "size": "big",
+        "x": 0.5149424180616591,
+        "y": 0.4744203465014084
+      }
+    ],
+    "image": "images/img_001923.png",
+    "bg": "#e8f8f5"
+  },
+  {
+    "id": 198,
+    "type": "binary",
+    "sentence": "a small cyan star is below a small green triangle",
+    "direction": "below",
+    "objects": [
+      {
+        "object": "star",
+        "color": "cyan",
+        "size": "small",
+        "x": 0.4796243740710455,
+        "y": 0.22453526690182568
+      },
+      {
+        "object": "triangle",
+        "color": "green",
+        "size": "small",
+        "x": 0.4721805118892188,
+        "y": 0.460622699614497
+      }
+    ],
+    "image": "images/img_001127.png",
+    "bg": "#e8f8f5"
+  },
+  {
+    "id": 199,
+    "type": "binary",
+    "sentence": "a medium pink cube is lower left of a medium purple sphere",
+    "direction": "lower left of",
+    "objects": [
+      {
+        "object": "cube",
+        "color": "pink",
+        "size": "medium",
+        "x": 0.295577566035889,
+        "y": 0.28015562154079565
+      },
+      {
+        "object": "sphere",
+        "color": "purple",
+        "size": "medium",
+        "x": 0.46535508398126085,
+        "y": 0.46697943643496964
+      }
+    ],
+    "image": "images/img_001396.png",
+    "bg": "#e8f8f5"
+  }
+]
