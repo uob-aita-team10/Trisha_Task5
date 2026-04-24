@@ -1,0 +1,153 @@
+[
+  {
+    "id": 163,
+    "type": "single",
+    "sentence": "a big cyan hexagon appears at the top right of the image",
+    "position": "top right",
+    "objects": [
+      {
+        "object": "hexagon",
+        "color": "cyan",
+        "size": "big",
+        "x": 0.7646570333401346,
+        "y": 0.7238245769464632
+      }
+    ],
+    "image": "images/img_000435.png",
+    "bg": "#eafaf1"
+  },
+  {
+    "id": 28,
+    "type": "binary",
+    "sentence": "a medium cyan sphere is upper right of a medium green triangle",
+    "direction": "upper right of",
+    "objects": [
+      {
+        "object": "sphere",
+        "color": "cyan",
+        "size": "medium",
+        "x": 0.7116695352752388,
+        "y": 0.6640127470045681
+      },
+      {
+        "object": "triangle",
+        "color": "green",
+        "size": "medium",
+        "x": 0.5311700281990502,
+        "y": 0.47998855247079975
+      }
+    ],
+    "image": "images/img_000615.png",
+    "bg": "#f4ecf7"
+  },
+  {
+    "id": 6,
+    "type": "triple",
+    "sentence": "a small cyan sphere and a big cyan sphere are on the top and bottom of a big yellow cross",
+    "layout": "top and bottom",
+    "objects": [
+      {
+        "object": "sphere",
+        "color": "cyan",
+        "size": "small",
+        "x": 0.5129801054550969,
+        "y": 0.7161463709859606
+      },
+      {
+        "object": "sphere",
+        "color": "cyan",
+        "size": "big",
+        "x": 0.5339706848855957,
+        "y": 0.2507711655980863
+      },
+      {
+        "object": "cross",
+        "color": "yellow",
+        "size": "big",
+        "x": 0.5294347606468267,
+        "y": 0.4909767113903656
+      }
+    ],
+    "image": "images/img_001910.png",
+    "bg": "#f5f5f5"
+  },
+  {
+    "id": 189,
+    "type": "binary",
+    "sentence": "a medium cyan star is lower right of a big green cross",
+    "direction": "lower right of",
+    "objects": [
+      {
+        "object": "star",
+        "color": "cyan",
+        "size": "medium",
+        "x": 0.6552425484493407,
+        "y": 0.35728033715862545
+      },
+      {
+        "object": "cross",
+        "color": "green",
+        "size": "big",
+        "x": 0.46316741130558975,
+        "y": 0.5287202604333312
+      }
+    ],
+    "image": "images/img_001011.png",
+    "bg": "#eaf4fb"
+  },
+  {
+    "id": 70,
+    "type": "binary",
+    "sentence": "a small orange pentagon is lower left of a big cyan cross",
+    "direction": "lower left of",
+    "objects": [
+      {
+        "object": "pentagon",
+        "color": "orange",
+        "size": "small",
+        "x": 0.34562065627060645,
+        "y": 0.326560778498225
+      },
+      {
+        "object": "cross",
+        "color": "cyan",
+        "size": "big",
+        "x": 0.5090931017914555,
+        "y": 0.497100166458912
+      }
+    ],
+    "image": "images/img_000584.png",
+    "bg": "#fef9e7"
+  },
+  {
+    "id": 62,
+    "type": "triple",
+    "sentence": "a small green sphere and a small orange sphere are on the top and bottom of a medium green cross",
+    "layout": "top and bottom",
+    "objects": [
+      {
+        "object": "sphere",
+        "color": "green",
+        "size": "small",
+        "x": 0.4454599728427429,
+        "y": 0.7713604555124819
+      },
+      {
+        "object": "sphere",
+        "color": "orange",
+        "size": "small",
+        "x": 0.4864544167463162,
+        "y": 0.2582908431319942
+      },
+      {
+        "object": "cross",
+        "color": "green",
+        "size": "medium",
+        "x": 0.47532903883245375,
+        "y": 0.4951369022756086
+      }
+    ],
+    "image": "images/img_001894.png",
+    "bg": "#f4ecf7"
+  }
+]

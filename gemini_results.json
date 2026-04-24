@@ -1,0 +1,38 @@
+[
+  {
+    "image": "images/img_000435.png",
+    "type": "single",
+    "ground_truth": "a big cyan hexagon appears at the top right of the image",
+    "gemini_response": "ERROR"
+  },
+  {
+    "image": "images/img_000615.png",
+    "type": "binary",
+    "ground_truth": "a medium cyan sphere is upper right of a medium green triangle",
+    "gemini_response": "ERROR"
+  },
+  {
+    "image": "images/img_001910.png",
+    "type": "triple",
+    "ground_truth": "a small cyan sphere and a big cyan sphere are on the top and bottom of a big yellow cross",
+    "gemini_response": "ERROR"
+  },
+  {
+    "image": "images/img_001011.png",
+    "type": "binary",
+    "ground_truth": "a medium cyan star is lower right of a big green cross",
+    "gemini_response": "ERROR"
+  },
+  {
+    "image": "images/img_000584.png",
+    "type": "binary",
+    "ground_truth": "a small orange pentagon is lower left of a big cyan cross",
+    "gemini_response": "ERROR"
+  },
+  {
+    "image": "images/img_001894.png",
+    "type": "triple",
+    "ground_truth": "a small green sphere and a small orange sphere are on the top and bottom of a medium green cross",
+    "gemini_response": "ERROR"
+  }
+]
