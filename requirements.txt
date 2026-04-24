@@ -4,7 +4,3 @@ Pillow>=9.0.0
 torch>=2.0.0
 torchvision>=0.15.0
 openai
-
-#ChatGPT API KEY: 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
-
-#Gemini API Key: AIzaSyDdvfnMZrisnWLIrXB-A1_7M0XQBMBPPQM
