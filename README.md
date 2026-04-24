@@ -41,3 +41,5 @@ python evaluate_gemini.py \
   --delay 10
 ```
 
+**Note**
+evaluate_chatgpt.py and evaluate_gemini.py uses llm_test_images (created using pick_test_samples.py) for evaluation. In case llm_test_images is not present, it takes dataset/test.json as a default option
