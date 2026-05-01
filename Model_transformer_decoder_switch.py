@@ -1,5 +1,5 @@
 """
-transformer_captioning_final.py
+Model_transformer_decoder_switch.py
 
 CNN Encoder + Transformer Decoder — with backbone fine-tuning support.
 
@@ -12,14 +12,30 @@ Two modes:
         python Model_transformer_decoder_backbone.py --data_dir ./dataset --epochs 50 --unfreeze_backbone
         → backbone runs every step, ~45s/epoch, ~80-99% exact match
 
-Changes from previous version:
-    1. --unfreeze_backbone flag added
+Changes:
+    1. unfreeze_backbone flag added
     2. CNNEncoder accepts freeze_backbone argument
     3. Separate learning rates: backbone 10x lower than decoder
     4. Caching automatically disabled when backbone is unfrozen
-       (cached features become stale as backbone weights change)
     5. train_one_epoch_full / evaluate_loss_full added for unfrozen mode
     6. greedy_decode updated to handle unfrozen backbone correctly
+
+Usage:
+    Frozen backbone (fast, ~10s/epoch):
+        python Model_transformer_decoder_switch.py --data_dir ./dataset --epochs 50
+
+    Unfrozen backbone (fine-tuning, slower but more accurate):
+        python Model_transformer_decoder_switch.py --data_dir ./dataset --epochs 50 --unfreeze_backbone
+
+    Full model settings (used for final results):
+        python Model_transformer_decoder_switch.py --data_dir ./dataset --epochs 50
+            --embed_dim 256 --num_heads 8 --num_layers 3 --ff_dim 512 --unfreeze_backbone
+
+Output:
+    checkpoints_transformer_final/best_transformer_frozen.pth   (frozen run)
+    checkpoints_transformer_final/best_transformer_unfrozen.pth (unfrozen run)
+    checkpoints_transformer_final/results_frozen.json
+    checkpoints_transformer_final/results_unfrozen.json
 """
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -45,10 +61,10 @@ from torchvision import models, transforms
 # SPECIAL TOKENS
 # ─────────────────────────────────────────────────────────────────────────────
 
-PAD_TOKEN = "<PAD>"   # padding — fills empty slots in short sequences
-SOS_TOKEN = "<SOS>"   # start-of-sequence
-EOS_TOKEN = "<EOS>"   # end-of-sequence
-UNK_TOKEN = "<UNK>"   # unknown word
+PAD_TOKEN = "<PAD>"   
+SOS_TOKEN = "<SOS>"   
+EOS_TOKEN = "<EOS>"   
+UNK_TOKEN = "<UNK>"  
 
 PAD_IDX = 0
 SOS_IDX = 1
@@ -61,8 +77,6 @@ UNK_IDX = 3
 # ─────────────────────────────────────────────────────────────────────────────
 
 class Vocabulary:
-    """Converts words <-> integer indices."""
-
     def __init__(self):
         self.word2idx = {}
         self.idx2word = {}
@@ -111,8 +125,7 @@ class Vocabulary:
 # ─────────────────────────────────────────────────────────────────────────────
 
 class ShapeCaptionDataset(Dataset):
-    """Loads image-caption pairs from a JSON file."""
-
+   
     def __init__(self, json_path, data_dir, vocab, max_len, transform=None):
         with open(json_path, "r", encoding="utf-8") as f:
             self.data = json.load(f)
@@ -141,14 +154,6 @@ class ShapeCaptionDataset(Dataset):
 # ─────────────────────────────────────────────────────────────────────────────
 
 def precompute_features(dataset, backbone, device, batch_size=64):
-    """
-    Run ALL images through the frozen CNN backbone ONCE before training.
-
-    WHY: backbone runs 30x (or 50x or 100x) per epoch normally.
-    Caching runs it once. Every epoch then skips straight to the Transformer.
-    Only valid when backbone is FROZEN — if backbone is being trained,
-    its weights change every step so cached features become wrong.
-    """
     print("  Pre-computing image features (runs backbone once for all images)...")
 
     loader = DataLoader(dataset, batch_size=batch_size, shuffle=False, num_workers=0)
@@ -201,39 +206,30 @@ class CNNEncoder(nn.Module):
             weights=models.ResNet18_Weights.DEFAULT if pretrained else None
         )
 
-        # Remove last 2 layers to keep the 7x7 spatial feature maps
-        # [-1] = FC classifier  [-2] = global average pool
+        
         modules       = list(resnet.children())[:-2]
-        self.backbone = nn.Sequential(*modules)   # outputs (B, 512, 7, 7)
+        self.backbone = nn.Sequential(*modules)   
 
-        # ── CHANGE: freeze or unfreeze based on argument ──────────────────────
-        # freeze_backbone=True  → requires_grad=False → weights won't update
-        # freeze_backbone=False → requires_grad=True  → weights will update
+        
         for param in self.backbone.parameters():
             param.requires_grad = not freeze_backbone
 
         self.freeze_backbone = freeze_backbone
 
-        # Trainable projection: 512 → embed_dim (runs every training step)
+        
         self.projection = nn.Linear(512, embed_dim)
         self.norm       = nn.LayerNorm(embed_dim)
 
     def project(self, raw_features):
-        """
-        Applies projection to pre-cached backbone output.
-        Used during FROZEN training (fast path).
-
-        raw_features: (B, 512, 7, 7)
-        returns:      (B, 49, embed_dim)
-        """
+        
         B, C, H, W = raw_features.shape
 
-        # Flatten spatial grid: (B, 512, 7, 7) → (B, 49, 512)
-        features = raw_features.permute(0, 2, 3, 1)   # (B, 7, 7, 512)
-        features = features.reshape(B, H * W, C)       # (B, 49, 512)
+        
+        features = raw_features.permute(0, 2, 3, 1)  
+        features = features.reshape(B, H * W, C)       
 
-        # Project each patch: 512 → embed_dim
-        features = self.projection(features)            # (B, 49, embed_dim)
+        
+        features = self.projection(features)            
         features = self.norm(features)
 
         return features
@@ -248,12 +244,12 @@ class CNNEncoder(nn.Module):
         if self.freeze_backbone:
             # Frozen: no need to compute gradients through backbone
             with torch.no_grad():
-                raw = self.backbone(images)   # (B, 512, 7, 7)
+                raw = self.backbone(images)   
         else:
             # Unfrozen: gradients flow through backbone for fine-tuning
-            raw = self.backbone(images)       # (B, 512, 7, 7)
+            raw = self.backbone(images)       
 
-        return self.project(raw)             # (B, 49, embed_dim)
+        return self.project(raw)             
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -261,14 +257,7 @@ class CNNEncoder(nn.Module):
 # ─────────────────────────────────────────────────────────────────────────────
 
 class PositionalEncoding(nn.Module):
-    """
-    Adds position information to word embeddings using sine/cosine waves.
-
-    WHY: Transformer processes all words at once (unlike LSTM which goes
-    left to right). Without this, "red sphere above blue cube" and
-    "blue cube above red sphere" would look identical to the model.
-    """
-
+   
     def __init__(self, embed_dim, max_len=100, dropout=0.1):
         super().__init__()
         self.dropout = nn.Dropout(dropout)
@@ -301,9 +290,6 @@ class TransformerDecoder(nn.Module):
         2. Cross-attention        — each word looks at all 49 image patches
         3. Feed-forward network   — processes the combined information
 
-    Unlike LSTM:
-        LSTM  — passes a single hidden state forward, word by word
-        This  — all words attend to everything simultaneously (parallel)
     """
 
     def __init__(self, vocab_size, embed_dim=128, num_heads=4,
@@ -312,71 +298,58 @@ class TransformerDecoder(nn.Module):
 
         self.embed_dim = embed_dim
 
-        # Word index → dense vector
+        
         self.embedding    = nn.Embedding(vocab_size, embed_dim, padding_idx=PAD_IDX)
 
-        # Positional encoding — gives word order info
+        
         self.pos_encoding = PositionalEncoding(embed_dim, max_len + 10, dropout)
 
-        # Stack of Transformer decoder layers
+       
         decoder_layer = nn.TransformerDecoderLayer(
-            d_model         = embed_dim,   # size of each token vector
-            nhead           = num_heads,   # parallel attention heads
-            dim_feedforward = ff_dim,      # internal feed-forward size
+            d_model         = embed_dim,   
+            nhead           = num_heads,   
+            dim_feedforward = ff_dim,      
             dropout         = dropout,
-            batch_first     = True,        # (batch, seq, features) ordering
+            batch_first     = True,        
         )
         self.transformer = nn.TransformerDecoder(decoder_layer, num_layers=num_layers)
 
-        # Final projection: embed_dim → one score per vocab word
+       
         self.fc_out  = nn.Linear(embed_dim, vocab_size)
         self.max_len = max_len
 
     def make_causal_mask(self, seq_len, device):
-        """
-        Upper triangular mask — word at position t can only see 0..t.
-        Prevents the model from "cheating" by looking at future words.
-        """
+        
         return torch.triu(
             torch.ones(seq_len, seq_len, device=device), diagonal=1
         ).bool()
 
     def forward(self, image_features, captions):
-        """
-        Training forward pass with teacher forcing.
-
-        Input:  [SOS, w1, w2, w3, ..., wN]  (captions[:, :-1])
-        Target: [w1,  w2, w3, ..., wN, EOS] (captions[:, 1:])
-
-        image_features: (B, 49, embed_dim)
-        captions:       (B, max_len)
-        returns logits: (B, max_len-1, vocab_size)
-        """
-        tgt     = captions[:, :-1]    # drop last token — input to decoder
+        
+        tgt     = captions[:, :-1]    
         seq_len = tgt.size(1)
 
-        # 1. Embed + scale (sqrt scaling stabilises training)
+        
         tgt_emb = self.embedding(tgt) * math.sqrt(self.embed_dim)
 
-        # 2. Add position information
+       
         tgt_emb = self.pos_encoding(tgt_emb)
 
-        # 3. Causal mask — hides future words during training
+       
         causal_mask = self.make_causal_mask(seq_len, tgt.device)
 
-        # 4. Padding mask — ignore PAD tokens in attention
+       
         tgt_key_padding_mask = (tgt == PAD_IDX)
 
-        # 5. Run through all Transformer decoder layers
+        
         output = self.transformer(
             tgt                  = tgt_emb,
-            memory               = image_features,    # 49 image patches
+            memory               = image_features,    
             tgt_mask             = causal_mask,
             tgt_key_padding_mask = tgt_key_padding_mask,
-        )                                              # (B, seq_len, embed_dim)
-
-        # 6. Project to vocabulary scores
-        return self.fc_out(output)                     # (B, seq_len, vocab_size)
+        )                                             
+       
+        return self.fc_out(output)                     
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -384,18 +357,18 @@ class TransformerDecoder(nn.Module):
 # ─────────────────────────────────────────────────────────────────────────────
 
 class CNNTransformerCaptioner(nn.Module):
-    """Full model: CNN Encoder + Transformer Decoder."""
+    
 
     def __init__(self, vocab_size, embed_dim=128, num_heads=4,
                  num_layers=2, ff_dim=256, max_len=25,
                  dropout=0.1, pretrained=True, freeze_backbone=True):
         super().__init__()
 
-        # ── CHANGE: pass freeze_backbone through to encoder ───────────────────
+        
         self.encoder = CNNEncoder(
             embed_dim       = embed_dim,
             pretrained      = pretrained,
-            freeze_backbone = freeze_backbone,   # NEW
+            freeze_backbone = freeze_backbone, 
         )
         self.decoder = TransformerDecoder(
             vocab_size = vocab_size,
@@ -409,23 +382,14 @@ class CNNTransformerCaptioner(nn.Module):
         self.max_len = max_len
 
     def forward_cached(self, raw_features, captions):
-        """
-        Fast training path using PRE-CACHED backbone features.
-        Only valid when backbone is FROZEN.
-
-        raw_features: (B, 512, 7, 7) — cached from precompute_features()
-        captions:     (B, max_len)
-        """
-        # Move to the same device as projection weights
+        
+        
         proj_device    = next(self.encoder.projection.parameters()).device
         image_features = self.encoder.project(raw_features.to(proj_device))
         return self.decoder(image_features, captions)
 
     def forward(self, images, captions):
-        """
-        Full forward pass — backbone + decoder.
-        Used during unfrozen training and during inference.
-        """
+        
         image_features = self.encoder(images)
         return self.decoder(image_features, captions)
 
@@ -435,55 +399,47 @@ class CNNTransformerCaptioner(nn.Module):
 # ─────────────────────────────────────────────────────────────────────────────
 
 def greedy_decode(model, images, max_len, device):
-    """
-    Generate captions one word at a time at test time.
-
-    Works for both frozen and unfrozen backbone — always runs the full
-    encoder.forward() so it works in both modes.
-
-    FIX: calls transformer internals directly to avoid the
-    captions[:, :-1] slice that caused IndexError on size-0 sequences.
-    """
+    
     model.eval()
     B = images.size(0)
 
     with torch.no_grad():
-        # Encode images → 49 spatial patch features
-        image_features = model.encoder(images)   # (B, 49, embed_dim)
+        
+        image_features = model.encoder(images)  
 
-        # Start with <SOS> token for every image in batch
+        
         generated = torch.full((B, 1), SOS_IDX, dtype=torch.long, device=device)
 
         for _ in range(max_len - 1):
             seq_len = generated.size(1)
 
-            # Embed all tokens generated so far
+           
             tgt_emb = model.decoder.embedding(generated) * math.sqrt(model.decoder.embed_dim)
             tgt_emb = model.decoder.pos_encoding(tgt_emb)
 
-            # Causal mask: word at position t can only see 0..t
+            
             causal_mask = model.decoder.make_causal_mask(seq_len, device)
 
-            # Run through Transformer layers
+            
             output = model.decoder.transformer(
                 tgt      = tgt_emb,
                 memory   = image_features,
                 tgt_mask = causal_mask,
-            )                                              # (B, seq_len, embed_dim)
+            )                                              
 
-            # Take only the LAST position — that's the next word prediction
-            last_output = output[:, -1, :]                # (B, embed_dim)
-            next_logits = model.decoder.fc_out(last_output)  # (B, vocab_size)
-            next_token  = next_logits.argmax(dim=-1, keepdim=True)  # (B, 1)
+            
+            last_output = output[:, -1, :]              
+            next_logits = model.decoder.fc_out(last_output) 
+            next_token  = next_logits.argmax(dim=-1, keepdim=True)  
 
-            # Append predicted token
+            
             generated = torch.cat([generated, next_token], dim=1)
 
-            # Stop early if all sequences have produced EOS
+           
             if (next_token == EOS_IDX).all():
                 break
 
-    return generated   # (B, generated_length)
+    return generated  
 
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -491,11 +447,7 @@ def greedy_decode(model, images, max_len, device):
 # ─────────────────────────────────────────────────────────────────────────────
 
 def train_one_epoch_cached(model, loader, criterion, optimizer, device):
-    """
-    Training with pre-cached features — used when backbone is FROZEN.
-    Loader yields (raw_features, captions). Backbone never runs.
-    Fastest option: ~10s/epoch on CPU.
-    """
+    
     model.train()
     total_loss = 0.0
     n          = 0
@@ -506,9 +458,9 @@ def train_one_epoch_cached(model, loader, criterion, optimizer, device):
 
         optimizer.zero_grad()
 
-        # Fast path: skip backbone, only run projection + Transformer
+        
         logits  = model.forward_cached(raw_features, captions)
-        targets = captions[:, 1:]   # shift left: predict next word
+        targets = captions[:, 1:]   
 
         loss = criterion(
             logits.reshape(-1, logits.size(-1)),
@@ -554,12 +506,6 @@ def evaluate_loss_cached(model, loader, criterion, device):
 # ─────────────────────────────────────────────────────────────────────────────
 
 def train_one_epoch_full(model, loader, criterion, optimizer, device):
-    """
-    Training with full forward pass — used when backbone is UNFROZEN.
-    Loader yields (images, captions). Backbone runs every step.
-    Slower (~45s/epoch) but backbone adapts to your specific images.
-    This is why Rohan's model jumped from 51% to 99.73%.
-    """
     model.train()
     total_loss = 0.0
     n          = 0
@@ -570,7 +516,7 @@ def train_one_epoch_full(model, loader, criterion, optimizer, device):
 
         optimizer.zero_grad()
 
-        # Full forward pass — gradients flow through backbone too
+       
         logits  = model(images, captions)
         targets = captions[:, 1:]
 
@@ -590,7 +536,7 @@ def train_one_epoch_full(model, loader, criterion, optimizer, device):
 
 
 def evaluate_loss_full(model, loader, criterion, device):
-    """Validation loss with full forward pass — unfrozen backbone mode."""
+    
     model.eval()
     total_loss = 0.0
     n          = 0
@@ -618,11 +564,7 @@ def evaluate_loss_full(model, loader, criterion, device):
 # ─────────────────────────────────────────────────────────────────────────────
 
 def compute_accuracy(model, loader, vocab, max_len, device):
-    """
-    Exact-match and token-level accuracy on test set.
-    Always uses original image loader (not cached) for greedy decode.
-    Works in both frozen and unfrozen modes.
-    """
+    
     model.eval()
     exact_match   = 0
     token_correct = 0
@@ -697,7 +639,7 @@ def main():
 
     args = parser.parse_args()
 
-    # ── Device setup ─────────────────────────────────────────────────────────
+   
     device         = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     use_pin_memory = (device.type == "cuda")
 
@@ -705,7 +647,7 @@ def main():
     if device.type == "cpu":
         print("  Running on CPU. Google Colab (free T4 GPU) is ~15x faster.")
 
-    # Print mode clearly so it's obvious which run is which
+   
     if args.unfreeze_backbone:
         print("  Mode: UNFROZEN backbone (fine-tuning) — slower but more accurate")
         print("        Backbone LR: {:.2e}  |  Decoder LR: {:.2e}".format(
@@ -771,18 +713,10 @@ def main():
         max_len         = args.max_len,
         dropout         = args.dropout,
         pretrained      = True,
-        freeze_backbone = not args.unfreeze_backbone,   # ← KEY CHANGE
+        freeze_backbone = not args.unfreeze_backbone,  
     ).to(device)
 
-    # torch.compile for free extra speed (PyTorch 2.0+)
-    '''try:
-        model = torch.compile(model)
-        print("  torch.compile() applied — extra speed boost active.")
-    except Exception:
-        print("  torch.compile() skipped.")
-    else:
-        print("  torch.compile() skipped (unfrozen backbone mode on Windows CPU).")'''
-    # REPLACE WITH THIS — just one line:
+
     print("  torch.compile() disabled (not supported on Windows CPU without Visual C++).")
 
     total_params     = sum(p.numel() for p in model.parameters())
@@ -826,7 +760,7 @@ def main():
         val_loader   = DataLoader(val_dataset,   batch_size=args.batch_size,
                                   shuffle=False, num_workers=0, pin_memory=use_pin_memory)
 
-    # Test loader always uses images (greedy_decode needs full encoder)
+    
     test_loader = DataLoader(test_dataset, batch_size=args.batch_size,
                              shuffle=False, num_workers=0, pin_memory=use_pin_memory)
 
@@ -834,9 +768,7 @@ def main():
     criterion = nn.CrossEntropyLoss(ignore_index=PAD_IDX)
 
     if args.unfreeze_backbone:
-        # ── CHANGE: separate learning rates for backbone vs decoder ───────────
-        # Backbone: pretrained, needs very small LR to fine-tune gently
-        # Decoder:  random init, needs full LR to learn from scratch
+       
         try:
             encoder_params = list(model._orig_mod.encoder.backbone.parameters())
             decoder_params = (list(model._orig_mod.encoder.projection.parameters()) +
@@ -849,13 +781,13 @@ def main():
                               list(model.decoder.parameters()))
 
         optimizer = torch.optim.Adam([
-            {"params": encoder_params, "lr": args.lr * 0.1},  # backbone: lr/10
-            {"params": decoder_params, "lr": args.lr},         # decoder:  full lr
+            {"params": encoder_params, "lr": args.lr * 0.1},  
+            {"params": decoder_params, "lr": args.lr},        
         ])
         print(f"\n  Optimiser: backbone LR={args.lr*0.1:.1e}, decoder LR={args.lr:.1e}")
 
     else:
-        # Frozen backbone: only trainable params (projection + decoder)
+       
         optimizer = torch.optim.Adam(
             filter(lambda p: p.requires_grad, model.parameters()),
             lr=args.lr
@@ -878,13 +810,13 @@ def main():
 
         # ── Choose training function based on mode ────────────────────────────
         if args.unfreeze_backbone:
-            # Full forward pass — backbone updates every step
+           
             train_loss = train_one_epoch_full(
                 model, train_loader, criterion, optimizer, device)
             val_loss   = evaluate_loss_full(
                 model, val_loader, criterion, device)
         else:
-            # Cached forward pass — backbone skipped every step
+           
             train_loss = train_one_epoch_cached(
                 model, train_loader, criterion, optimizer, device)
             val_loss   = evaluate_loss_cached(
