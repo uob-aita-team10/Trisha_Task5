@@ -64,7 +64,7 @@ The sample count can be changed by editing `N_SAMPLES` in the script.
 ### Step 2 — Evaluate with GPT-4o
 
 ```bash
-python evaluate_chatgpt_simple.py \
+python evaluate_chatgpt.py \
   --data_dir ./dataset \
   --test_json ./llm_test_samples.json \
   --api_key YOUR_OPENAI_KEY
