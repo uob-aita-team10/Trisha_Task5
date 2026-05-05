@@ -45,9 +45,6 @@ Results on 1,600 training samples (2,000-sample base dataset, 80/10/10 split):
 **Key observation:** 
 Under the frozen backbone, the model showed systematic colour confusion — most notably predicting "blue" in place of "cyan". This is consistent with ImageNet pretrained features lacking the specialised colour representations needed for flat synthetic geometry. After fine-tuning, these errors disappeared entirely.
 
-The fine-tuned Transformer reaches 88%, below the 97% (Siyuan's attention LSTM) and 99.73% (Rohan's parallel classifier) ceilings. This gap is attributable to dataset scale rather than decoder architecture — the other two models used 12,000–15,000 training samples compared to 1,600 used here.
-
-
 ## LLM comparison
 
 ## LLM Evaluation
@@ -94,5 +91,3 @@ Both scripts use the same structured prompt, specifying the exact vocabulary (si
 relations) and sentence format required. This ensures outputs are comparable to ground truth using
 exact match.
 
-**Note**
-evaluate_chatgpt.py and evaluate_gemini.py uses llm_test_images (created using pick_test_samples.py) for evaluation. In case llm_test_images is not present, it takes dataset/test.json as a default option
